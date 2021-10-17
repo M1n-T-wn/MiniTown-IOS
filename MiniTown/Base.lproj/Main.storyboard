@@ -95,7 +95,7 @@
                     <navigationItem key="navigationItem" id="KQg-oR-7DQ"/>
                     <connections>
                         <outlet property="idTextField" destination="Whd-K3-SrJ" id="1Az-DM-rPa"/>
-                        <outlet property="passWorldTextField" destination="zSE-7s-gy2" id="Y22-TY-dRn"/>
+                        <outlet property="passWordTextField" destination="zSE-7s-gy2" id="Y22-TY-dRn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -114,7 +114,7 @@
                                 <rect key="frame" x="64" y="263" width="300" height="400"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVJ-Oc-pnm">
-                                        <rect key="frame" x="8" y="12" width="44.333333333333336" height="30"/>
+                                        <rect key="frame" x="8" y="12" width="44.666666666666664" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="UKG-Ex-sRP"/>
                                         </constraints>
@@ -148,7 +148,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 확인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7Z-JQ-TzK">
-                                        <rect key="frame" x="8" y="256" width="92.666666666666671" height="30"/>
+                                        <rect key="frame" x="8" y="256" width="93" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="rC2-If-xFo"/>
                                         </constraints>
@@ -228,13 +228,13 @@
                     <navigationItem key="navigationItem" id="dYq-4h-Bmh"/>
                     <connections>
                         <outlet property="SidField" destination="ajz-h3-8I2" id="Gpd-U5-RU8"/>
-                        <outlet property="SpwField" destination="c3j-5Q-3cp" id="7q5-cH-PMr"/>
+                        <outlet property="SnameField" destination="c3j-5Q-3cp" id="7q5-cH-PMr"/>
                         <outlet property="SrpwField" destination="4ec-cy-rLI" id="oPR-eE-6Gw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bzp-YF-gAE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="916.82242990654197" y="830.66954643628515"/>
+            <point key="canvasLocation" x="918" y="802"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kss-3l-erF">
