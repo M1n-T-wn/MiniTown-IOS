@@ -7,14 +7,26 @@
 
 import Foundation
 
-struct LocalLoginDto : Codable{
+var LoginDone = true
+var signupDone = true
+
+struct LocalLoginDto : Codable {
     let id : String
     let password : String
 }
 
-struct LocalSignUpDto : Codable{
+struct LocalSignUpDto : Codable {
     let id : String
     let name : String
     let password : String
 }
 
+struct Success : Codable {
+    let count : Int
+    let data : String 
+}
+
+struct LoginSuccess : Codable {
+    let count : Int
+    let data : JwtTokenResponse?
+}
