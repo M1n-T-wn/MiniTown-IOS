@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-let baseURL = "http://13.124.26.107:8080"
+let baseURL = "http://13.125.0.94:9093"
 
 enum Api {
     case login(_ id : String, _ password : String)
@@ -35,14 +35,6 @@ enum Api {
             return .post
         }
     }
-    var parameter: Parameters? {
-        switch self {
-        case .login(let id, let password):
-            return ["id": id, "password" : password]
-        case .reissue(let accessToken, let refreshToken):
-            return ["accessToken": accessToken, "refreshToken" : refreshToken]
-        case .signup(let id, let name, let password):
-            return ["id": id, "name" : name, "password": password]
-        }
-    }
+    
 }
+
