@@ -26,9 +26,12 @@ func logindata(id : String, password : String){
                 do {
                     if let resault = try? decoder.decode(LoginSuccess.self, from: data) {
                         if resault.data == nil {
-                            print("")
-                            LoginDone = false
+                            print("login error!!")
+                             LoginDone = false
+                            print("----------\(LoginDone)----------")
                             break
+                        } else {
+                            LoginDone = true
                         }
                         
                         Token.accessToken = resault.data?.accessToken
