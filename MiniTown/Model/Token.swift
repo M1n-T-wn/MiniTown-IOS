@@ -8,8 +8,8 @@
 import Foundation
 
 struct JwtTokenResponse : Codable{
-    let accessToken  :  String
-    let refreshToken  :  String
+    let accessToken  :  String?
+    let refreshToken  :  String?
 }
 
 struct Token {
