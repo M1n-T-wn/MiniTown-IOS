@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		43E6894DD143378ED781A7E5 /* Pods_MiniTown_MiniTownUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8462B38056EB502E2AC14E1A /* Pods_MiniTown_MiniTownUITests.framework */; };
+		57022507271E7B400039B91C /* FindMettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57022506271E7B400039B91C /* FindMettings.storyboard */; };
+		57022509271E7B940039B91C /* ReservationLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57022508271E7B940039B91C /* ReservationLocation.storyboard */; };
+		5702250B271E7BC50039B91C /* RentalItems.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5702250A271E7BC50039B91C /* RentalItems.storyboard */; };
 		570DA64E271CF79F00DC1908 /* corrner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570DA64D271CF79F00DC1908 /* corrner.swift */; };
 		570DA650271D2D3100DC1908 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570DA64F271D2D3100DC1908 /* HomeViewController.swift */; };
 		570DA653271D8DC600DC1908 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570DA652271D8DC500DC1908 /* UITextField.swift */; };
+		572D1534271EBA9900A90D85 /* MeetingHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D1533271EBA9900A90D85 /* MeetingHomeViewController.swift */; };
 		573E7BC0271AF20000EEC3A2 /* auth-controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E7BBF271AF20000EEC3A2 /* auth-controller.swift */; };
 		573E7BC3271B06EA00EEC3A2 /* Requst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E7BC2271B06EA00EEC3A2 /* Requst.swift */; };
 		576486E527190E140026CE77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576486E427190E140026CE77 /* AppDelegate.swift */; };
@@ -22,7 +26,9 @@
 		576486FC27190E160026CE77 /* MiniTownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576486FB27190E160026CE77 /* MiniTownTests.swift */; };
 		5764870627190E160026CE77 /* MiniTownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5764870527190E160026CE77 /* MiniTownUITests.swift */; };
 		5764870827190E160026CE77 /* MiniTownUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5764870727190E160026CE77 /* MiniTownUITestsLaunchTests.swift */; };
+		5787AC64271F09F80011F137 /* MainReservationLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5787AC63271F09F80011F137 /* MainReservationLocationController.swift */; };
 		5794C4C6271AE85800DE2A00 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794C4C5271AE85800DE2A00 /* Api.swift */; };
+		57D20C90271F004600F8A723 /* SoketRequst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D20C8F271F004600F8A723 /* SoketRequst.swift */; };
 		57D55F4F271ADAE90046147C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D55F4E271ADAE90046147C /* SignUpViewController.swift */; };
 		57D55F52271ADCE00046147C /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D55F51271ADCE00046147C /* Token.swift */; };
 		5BB33C799B7B423B811688F8 /* Pods_MiniTownTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E72D3F64249727C5E195D16 /* Pods_MiniTownTests.framework */; };
@@ -49,9 +55,13 @@
 /* Begin PBXFileReference section */
 		1E72D3F64249727C5E195D16 /* Pods_MiniTownTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniTownTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB137649600B5CCD9B4BE8A /* Pods-MiniTownTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniTownTests.release.xcconfig"; path = "Target Support Files/Pods-MiniTownTests/Pods-MiniTownTests.release.xcconfig"; sourceTree = "<group>"; };
+		57022506271E7B400039B91C /* FindMettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindMettings.storyboard; sourceTree = "<group>"; };
+		57022508271E7B940039B91C /* ReservationLocation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReservationLocation.storyboard; sourceTree = "<group>"; };
+		5702250A271E7BC50039B91C /* RentalItems.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RentalItems.storyboard; sourceTree = "<group>"; };
 		570DA64D271CF79F00DC1908 /* corrner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = corrner.swift; sourceTree = "<group>"; };
 		570DA64F271D2D3100DC1908 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		570DA652271D8DC500DC1908 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		572D1533271EBA9900A90D85 /* MeetingHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHomeViewController.swift; sourceTree = "<group>"; };
 		573E7BBF271AF20000EEC3A2 /* auth-controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "auth-controller.swift"; sourceTree = "<group>"; };
 		573E7BC2271B06EA00EEC3A2 /* Requst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requst.swift; sourceTree = "<group>"; };
 		576486E127190E140026CE77 /* MiniTown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniTown.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +77,9 @@
 		5764870127190E160026CE77 /* MiniTownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniTownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5764870527190E160026CE77 /* MiniTownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTownUITests.swift; sourceTree = "<group>"; };
 		5764870727190E160026CE77 /* MiniTownUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTownUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5787AC63271F09F80011F137 /* MainReservationLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReservationLocationController.swift; sourceTree = "<group>"; };
 		5794C4C5271AE85800DE2A00 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		57D20C8F271F004600F8A723 /* SoketRequst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoketRequst.swift; sourceTree = "<group>"; };
 		57D55F4E271ADAE90046147C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		57D55F51271ADCE00046147C /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		6833FDB1CB587743470D5C33 /* Pods_MiniTown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniTown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +134,9 @@
 			children = (
 				570DA64C271CF77200DC1908 /* Designable */,
 				576486EA27190E140026CE77 /* loginView.storyboard */,
+				5702250A271E7BC50039B91C /* RentalItems.storyboard */,
+				57022508271E7B940039B91C /* ReservationLocation.storyboard */,
+				57022506271E7B400039B91C /* FindMettings.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -140,6 +155,23 @@
 				570DA652271D8DC500DC1908 /* UITextField.swift */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		572D1531271EB9ED00A90D85 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				576486E827190E140026CE77 /* LoginViewController.swift */,
+				57D55F4E271ADAE90046147C /* SignUpViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		572D1532271EBA4200A90D85 /* FindMeeting */ = {
+			isa = PBXGroup;
+			children = (
+				572D1533271EBA9900A90D85 /* MeetingHomeViewController.swift */,
+			);
+			path = FindMeeting;
 			sourceTree = "<group>";
 		};
 		576486D827190E140026CE77 = {
@@ -201,20 +233,38 @@
 		5764871427190E3D0026CE77 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				576486E827190E140026CE77 /* LoginViewController.swift */,
-				57D55F4E271ADAE90046147C /* SignUpViewController.swift */,
+				5787AC62271F09DB0011F137 /* ReservationLocation */,
 				570DA64F271D2D3100DC1908 /* HomeViewController.swift */,
+				572D1532271EBA4200A90D85 /* FindMeeting */,
+				572D1531271EB9ED00A90D85 /* Auth */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5787AC62271F09DB0011F137 /* ReservationLocation */ = {
+			isa = PBXGroup;
+			children = (
+				5787AC63271F09F80011F137 /* MainReservationLocationController.swift */,
+			);
+			path = ReservationLocation;
 			sourceTree = "<group>";
 		};
 		5794C4C4271AE83600DE2A00 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				57D20C8E271EFD8700F8A723 /* Soket */,
 				5794C4C5271AE85800DE2A00 /* Api.swift */,
 				573E7BC2271B06EA00EEC3A2 /* Requst.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		57D20C8E271EFD8700F8A723 /* Soket */ = {
+			isa = PBXGroup;
+			children = (
+				57D20C8F271F004600F8A723 /* SoketRequst.swift */,
+			);
+			path = Soket;
 			sourceTree = "<group>";
 		};
 		57D55F50271ADCB70046147C /* Model */ = {
@@ -349,7 +399,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				576486F127190E150026CE77 /* LaunchScreen.storyboard in Resources */,
+				5702250B271E7BC50039B91C /* RentalItems.storyboard in Resources */,
 				576486EE27190E150026CE77 /* Assets.xcassets in Resources */,
+				57022507271E7B400039B91C /* FindMettings.storyboard in Resources */,
+				57022509271E7B940039B91C /* ReservationLocation.storyboard in Resources */,
 				576486EC27190E140026CE77 /* loginView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,12 +532,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				570DA64E271CF79F00DC1908 /* corrner.swift in Sources */,
+				57D20C90271F004600F8A723 /* SoketRequst.swift in Sources */,
+				5787AC64271F09F80011F137 /* MainReservationLocationController.swift in Sources */,
 				576486E927190E140026CE77 /* LoginViewController.swift in Sources */,
 				5794C4C6271AE85800DE2A00 /* Api.swift in Sources */,
 				570DA653271D8DC600DC1908 /* UITextField.swift in Sources */,
 				570DA650271D2D3100DC1908 /* HomeViewController.swift in Sources */,
 				57D55F52271ADCE00046147C /* Token.swift in Sources */,
 				573E7BC3271B06EA00EEC3A2 /* Requst.swift in Sources */,
+				572D1534271EBA9900A90D85 /* MeetingHomeViewController.swift in Sources */,
 				576486E527190E140026CE77 /* AppDelegate.swift in Sources */,
 				573E7BC0271AF20000EEC3A2 /* auth-controller.swift in Sources */,
 				57D55F4F271ADAE90046147C /* SignUpViewController.swift in Sources */,

@@ -1,16 +1,24 @@
 PODS:
   - Alamofire (5.4.3)
+  - SocketRocket (0.6.0)
+  - StompClientLib (1.4.1):
+    - SocketRocket
 
 DEPENDENCIES:
   - Alamofire (~> 5.4)
+  - StompClientLib
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - SocketRocket
+    - StompClientLib
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+  StompClientLib: ac40390e9660c574675f1c933bec81c8e2811a4f
 
-PODFILE CHECKSUM: fdb3845303d094954791b0b6040e8887a9971500
+PODFILE CHECKSUM: fbdee3b43d594295fdff4df051974358e8852e7f
 
 COCOAPODS: 1.10.1
