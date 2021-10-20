@@ -28,6 +28,7 @@
 		5764870827190E160026CE77 /* MiniTownUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5764870727190E160026CE77 /* MiniTownUITestsLaunchTests.swift */; };
 		5787AC64271F09F80011F137 /* MainReservationLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5787AC63271F09F80011F137 /* MainReservationLocationController.swift */; };
 		5794C4C6271AE85800DE2A00 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794C4C5271AE85800DE2A00 /* Api.swift */; };
+		57CE4AF1272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57CE4AF0272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist */; };
 		57D20C90271F004600F8A723 /* SoketRequst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D20C8F271F004600F8A723 /* SoketRequst.swift */; };
 		57D55F4F271ADAE90046147C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D55F4E271ADAE90046147C /* SignUpViewController.swift */; };
 		57D55F52271ADCE00046147C /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D55F51271ADCE00046147C /* Token.swift */; };
@@ -79,6 +80,7 @@
 		5764870727190E160026CE77 /* MiniTownUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTownUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5787AC63271F09F80011F137 /* MainReservationLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReservationLocationController.swift; sourceTree = "<group>"; };
 		5794C4C5271AE85800DE2A00 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		57CE4AF0272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist"; path = "../../../../Downloads/client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
 		57D20C8F271F004600F8A723 /* SoketRequst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoketRequst.swift; sourceTree = "<group>"; };
 		57D55F4E271ADAE90046147C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		57D55F51271ADCE00046147C /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				576486E627190E140026CE77 /* SceneDelegate.swift */,
 				576486ED27190E150026CE77 /* Assets.xcassets */,
 				576486F227190E150026CE77 /* Info.plist */,
+				57CE4AF0272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist */,
 				576486EF27190E150026CE77 /* LaunchScreen.storyboard */,
 			);
 			path = MiniTown;
@@ -259,9 +262,17 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		57CE4AEF272022090008F0CA /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
 		57D20C8E271EFD8700F8A723 /* Soket */ = {
 			isa = PBXGroup;
 			children = (
+				57CE4AEF272022090008F0CA /* OAuth */,
 				57D20C8F271F004600F8A723 /* SoketRequst.swift */,
 			);
 			path = Soket;
@@ -404,6 +415,7 @@
 				57022507271E7B400039B91C /* FindMettings.storyboard in Resources */,
 				57022509271E7B940039B91C /* ReservationLocation.storyboard in Resources */,
 				576486EC27190E140026CE77 /* loginView.storyboard in Resources */,
+				57CE4AF1272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
