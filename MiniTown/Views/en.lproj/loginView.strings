@@ -1,0 +1,63 @@
+
+/* Class = "UILabel"; text = "17세 김대희"; ObjectID = "4Tj-yu-Rkr"; */
+"4Tj-yu-Rkr.text" = "17세 김대희";
+
+/* Class = "UIButton"; configuration.title = "모임 찾기"; ObjectID = "56H-Af-Prp"; */
+"56H-Af-Prp.configuration.title" = "모임 찾기";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "56H-Af-Prp"; */
+"56H-Af-Prp.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "아이디"; ObjectID = "KVJ-Oc-pnm"; */
+"KVJ-Oc-pnm.text" = "아이디";
+
+/* Class = "UIButton"; configuration.title = "물품 대여"; ObjectID = "NoL-9R-qt0"; */
+"NoL-9R-qt0.configuration.title" = "물품 대여";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NoL-9R-qt0"; */
+"NoL-9R-qt0.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "로그인"; ObjectID = "Vv9-4C-E9P"; */
+"Vv9-4C-E9P.configuration.title" = "로그인";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Vv9-4C-E9P"; */
+"Vv9-4C-E9P.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "아이디"; ObjectID = "Whd-K3-SrJ"; */
+"Whd-K3-SrJ.placeholder" = "아이디";
+
+/* Class = "UILabel"; text = "이름"; ObjectID = "amh-w3-Rtc"; */
+"amh-w3-Rtc.text" = "이름";
+
+/* Class = "UILabel"; text = "비밀번호 확인"; ObjectID = "f7Z-JQ-TzK"; */
+"f7Z-JQ-TzK.text" = "비밀번호 확인";
+
+/* Class = "UIButton"; configuration.title = "장소 예약"; ObjectID = "fWL-w8-WZr"; */
+"fWL-w8-WZr.configuration.title" = "장소 예약";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fWL-w8-WZr"; */
+"fWL-w8-WZr.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "회원가입을 시작해요"; ObjectID = "g2S-kk-5Mx"; */
+"g2S-kk-5Mx.text" = "회원가입을 시작해요";
+
+/* Class = "UILabel"; text = "17, 남, APPLE DEV"; ObjectID = "lm0-JL-5Hw"; */
+"lm0-JL-5Hw.text" = "17, 남, APPLE DEV";
+
+/* Class = "UIButton"; configuration.title = "로그인"; ObjectID = "msg-uB-FOI"; */
+"msg-uB-FOI.configuration.title" = "로그인";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "msg-uB-FOI"; */
+"msg-uB-FOI.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "처음이신가요? 회원가입하기"; ObjectID = "s2y-mM-Fzy"; */
+"s2y-mM-Fzy.configuration.title" = "처음이신가요? 회원가입하기";
+
+/* Class = "UIButton"; configuration.title = "설정"; ObjectID = "vyx-cQ-nY0"; */
+"vyx-cQ-nY0.configuration.title" = "설정";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vyx-cQ-nY0"; */
+"vyx-cQ-nY0.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "비밀번호"; ObjectID = "zSE-7s-gy2"; */
+"zSE-7s-gy2.placeholder" = "비밀번호";
