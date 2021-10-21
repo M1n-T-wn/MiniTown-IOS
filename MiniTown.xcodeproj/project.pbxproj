@@ -15,8 +15,9 @@
 		570DA650271D2D3100DC1908 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570DA64F271D2D3100DC1908 /* HomeViewController.swift */; };
 		570DA653271D8DC600DC1908 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570DA652271D8DC500DC1908 /* UITextField.swift */; };
 		572D1534271EBA9900A90D85 /* MeetingHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D1533271EBA9900A90D85 /* MeetingHomeViewController.swift */; };
-		573E7BC0271AF20000EEC3A2 /* auth-controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E7BBF271AF20000EEC3A2 /* auth-controller.swift */; };
+		573E7BC0271AF20000EEC3A2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E7BBF271AF20000EEC3A2 /* Model.swift */; };
 		573E7BC3271B06EA00EEC3A2 /* Requst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E7BC2271B06EA00EEC3A2 /* Requst.swift */; };
+		5761C91C2721205A0088B01C /* SecondSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5761C91B2721205A0088B01C /* SecondSignUpViewController.swift */; };
 		576486E527190E140026CE77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576486E427190E140026CE77 /* AppDelegate.swift */; };
 		576486E727190E140026CE77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576486E627190E140026CE77 /* SceneDelegate.swift */; };
 		576486E927190E140026CE77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576486E827190E140026CE77 /* LoginViewController.swift */; };
@@ -26,11 +27,11 @@
 		576486FC27190E160026CE77 /* MiniTownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576486FB27190E160026CE77 /* MiniTownTests.swift */; };
 		5764870627190E160026CE77 /* MiniTownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5764870527190E160026CE77 /* MiniTownUITests.swift */; };
 		5764870827190E160026CE77 /* MiniTownUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5764870727190E160026CE77 /* MiniTownUITestsLaunchTests.swift */; };
+		57711D29272141660069FA3F /* ViewToggleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57711D28272141660069FA3F /* ViewToggleModel.swift */; };
 		5787AC64271F09F80011F137 /* MainReservationLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5787AC63271F09F80011F137 /* MainReservationLocationController.swift */; };
 		5794C4C6271AE85800DE2A00 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794C4C5271AE85800DE2A00 /* Api.swift */; };
 		57CE4AF1272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57CE4AF0272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist */; };
-		57D20C90271F004600F8A723 /* SoketRequst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D20C8F271F004600F8A723 /* SoketRequst.swift */; };
-		57D55F4F271ADAE90046147C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D55F4E271ADAE90046147C /* SignUpViewController.swift */; };
+		57D55F4F271ADAE90046147C /* FirstSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D55F4E271ADAE90046147C /* FirstSignUpViewController.swift */; };
 		57D55F52271ADCE00046147C /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D55F51271ADCE00046147C /* Token.swift */; };
 		5BB33C799B7B423B811688F8 /* Pods_MiniTownTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E72D3F64249727C5E195D16 /* Pods_MiniTownTests.framework */; };
 		A8259739E9DA5D794733D76F /* Pods_MiniTown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6833FDB1CB587743470D5C33 /* Pods_MiniTown.framework */; };
@@ -63,8 +64,9 @@
 		570DA64F271D2D3100DC1908 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		570DA652271D8DC500DC1908 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		572D1533271EBA9900A90D85 /* MeetingHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHomeViewController.swift; sourceTree = "<group>"; };
-		573E7BBF271AF20000EEC3A2 /* auth-controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "auth-controller.swift"; sourceTree = "<group>"; };
+		573E7BBF271AF20000EEC3A2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		573E7BC2271B06EA00EEC3A2 /* Requst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requst.swift; sourceTree = "<group>"; };
+		5761C91B2721205A0088B01C /* SecondSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSignUpViewController.swift; sourceTree = "<group>"; };
 		576486E127190E140026CE77 /* MiniTown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniTown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		576486E427190E140026CE77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		576486E627190E140026CE77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,11 +80,11 @@
 		5764870127190E160026CE77 /* MiniTownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniTownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5764870527190E160026CE77 /* MiniTownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTownUITests.swift; sourceTree = "<group>"; };
 		5764870727190E160026CE77 /* MiniTownUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTownUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		57711D28272141660069FA3F /* ViewToggleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewToggleModel.swift; sourceTree = "<group>"; };
 		5787AC63271F09F80011F137 /* MainReservationLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReservationLocationController.swift; sourceTree = "<group>"; };
 		5794C4C5271AE85800DE2A00 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		57CE4AF0272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist"; path = "../../../../Downloads/client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
-		57D20C8F271F004600F8A723 /* SoketRequst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoketRequst.swift; sourceTree = "<group>"; };
-		57D55F4E271ADAE90046147C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		57D55F4E271ADAE90046147C /* FirstSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSignUpViewController.swift; sourceTree = "<group>"; };
 		57D55F51271ADCE00046147C /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		6833FDB1CB587743470D5C33 /* Pods_MiniTown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniTown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8462B38056EB502E2AC14E1A /* Pods_MiniTown_MiniTownUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniTown_MiniTownUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,7 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				576486E827190E140026CE77 /* LoginViewController.swift */,
-				57D55F4E271ADAE90046147C /* SignUpViewController.swift */,
+				57D55F4E271ADAE90046147C /* FirstSignUpViewController.swift */,
+				5761C91B2721205A0088B01C /* SecondSignUpViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 		576486E327190E140026CE77 /* MiniTown */ = {
 			isa = PBXGroup;
 			children = (
+				57711D27272141440069FA3F /* ViewToggle */,
 				570DA651271D8DAD00DC1908 /* extension */,
 				570DA649271CEB1A00DC1908 /* Views */,
 				5764871427190E3D0026CE77 /* ViewController */,
@@ -244,6 +248,14 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		57711D27272141440069FA3F /* ViewToggle */ = {
+			isa = PBXGroup;
+			children = (
+				57711D28272141660069FA3F /* ViewToggleModel.swift */,
+			);
+			path = ViewToggle;
+			sourceTree = "<group>";
+		};
 		5787AC62271F09DB0011F137 /* ReservationLocation */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,18 +274,9 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		57CE4AEF272022090008F0CA /* OAuth */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OAuth;
-			sourceTree = "<group>";
-		};
 		57D20C8E271EFD8700F8A723 /* Soket */ = {
 			isa = PBXGroup;
 			children = (
-				57CE4AEF272022090008F0CA /* OAuth */,
-				57D20C8F271F004600F8A723 /* SoketRequst.swift */,
 			);
 			path = Soket;
 			sourceTree = "<group>";
@@ -282,7 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				57D55F51271ADCE00046147C /* Token.swift */,
-				573E7BBF271AF20000EEC3A2 /* auth-controller.swift */,
+				573E7BBF271AF20000EEC3A2 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -544,7 +547,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				570DA64E271CF79F00DC1908 /* corrner.swift in Sources */,
-				57D20C90271F004600F8A723 /* SoketRequst.swift in Sources */,
 				5787AC64271F09F80011F137 /* MainReservationLocationController.swift in Sources */,
 				576486E927190E140026CE77 /* LoginViewController.swift in Sources */,
 				5794C4C6271AE85800DE2A00 /* Api.swift in Sources */,
@@ -554,8 +556,10 @@
 				573E7BC3271B06EA00EEC3A2 /* Requst.swift in Sources */,
 				572D1534271EBA9900A90D85 /* MeetingHomeViewController.swift in Sources */,
 				576486E527190E140026CE77 /* AppDelegate.swift in Sources */,
-				573E7BC0271AF20000EEC3A2 /* auth-controller.swift in Sources */,
-				57D55F4F271ADAE90046147C /* SignUpViewController.swift in Sources */,
+				573E7BC0271AF20000EEC3A2 /* Model.swift in Sources */,
+				57711D29272141660069FA3F /* ViewToggleModel.swift in Sources */,
+				5761C91C2721205A0088B01C /* SecondSignUpViewController.swift in Sources */,
+				57D55F4F271ADAE90046147C /* FirstSignUpViewController.swift in Sources */,
 				576486E727190E140026CE77 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
