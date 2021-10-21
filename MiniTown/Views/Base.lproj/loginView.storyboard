@@ -98,7 +98,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="krN-jx-0bO"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" image="google.png" title="  Google로 로그인  ">
+                                <buttonConfiguration key="configuration" style="tinted" image="google" title="  Google로 로그인  ">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
                                     <color key="baseBackgroundColor" name="BlueCust"/>
                                 </buttonConfiguration>
@@ -324,9 +324,7 @@
                             <constraint firstItem="jrj-1K-ZQw" firstAttribute="centerX" secondItem="KIr-dZ-ZH5" secondAttribute="centerX" id="xQO-TT-GBc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="dYq-4h-Bmh">
-                        <barButtonItem key="backBarButtonItem" title="로그인" id="IGi-OI-7Nu"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="dYq-4h-Bmh"/>
                     <connections>
                         <outlet property="AuthenticationNumberPress" destination="8jU-Ty-W1n" id="2jg-Ov-aiP"/>
                         <outlet property="ConfirmationPress" destination="Ip4-tB-otX" id="20r-1k-puk"/>
@@ -375,6 +373,9 @@
                                             <constraint firstAttribute="width" constant="103.66666666666667" id="BSR-ce-IZ8"/>
                                         </constraints>
                                         <locale key="locale" localeIdentifier="ko_KR"/>
+                                        <connections>
+                                            <action selector="birthDatePicker:" destination="QkU-1x-kVN" eventType="valueChanged" id="pTJ-b8-XtS"/>
+                                        </connections>
                                     </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성별" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzo-De-e5E">
                                         <rect key="frame" x="8" y="98" width="59" height="30"/>
@@ -396,6 +397,9 @@
                                             <segment title="남자"/>
                                             <segment title="여자"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="genderChanged:" destination="QkU-1x-kVN" eventType="valueChanged" id="0Oi-Bn-bB9"/>
+                                        </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3X-OF-Vxc">
                                         <rect key="frame" x="8" y="168" width="59" height="30"/>
@@ -493,6 +497,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="returnLoginButton:" destination="QkU-1x-kVN" eventType="touchUpInside" id="HsD-ot-YQg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pOz-Oh-8ny"/>
@@ -508,6 +515,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rbl-zR-CG3"/>
+                    <connections>
+                        <outlet property="UIbirthDatePicker" destination="kOY-Lu-cu9" id="bNF-DV-qzB"/>
+                        <outlet property="genderControl" destination="ZmJ-7Q-LVh" id="szu-zO-UFP"/>
+                        <outlet property="nameField" destination="BhK-Nk-PEu" id="2KO-mN-tfB"/>
+                        <outlet property="passwordField" destination="s5V-jM-Vii" id="a57-52-6mk"/>
+                        <outlet property="returnLoginPress" destination="fze-VS-DO9" id="S4s-S8-Naf"/>
+                        <outlet property="returnPasswordField" destination="Ugq-yF-uLB" id="9k5-kY-VgK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlj-hT-xcd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -849,7 +864,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWC-zl-kQI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1632" y="97"/>
+            <point key="canvasLocation" x="1724" y="97"/>
         </scene>
         <!--MainReservationLocationController-->
         <scene sceneID="R8K-6C-sbL">
@@ -910,7 +925,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="google.png" width="18" height="18"/>
+        <image name="google" width="20" height="20"/>
         <image name="mainBsck" width="760" height="320"/>
         <image name="smalLogo" width="242" height="124"/>
         <image name="모임 찾기" width="312" height="300"/>
