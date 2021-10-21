@@ -20,6 +20,9 @@ class FirstSignUpViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let backBarButtonItem = UIBarButtonItem(title: "아이디 설정", style: .plain, target: self, action: nil)
+        backBarButtonItem.tintColor = UIColor(red: 0.286, green: 0.576, blue: 0.98, alpha: 1)
+        self.navigationItem.backBarButtonItem = backBarButtonItem
         self.navigationController?.navigationBar.tintColor = UIColor(red: 0.286, green: 0.576, blue: 0.98, alpha: 1)
         self.navigationController?.navigationBar.backItem?.title = "아이디 설정"
         
@@ -29,6 +32,7 @@ class FirstSignUpViewController: UIViewController, UITextFieldDelegate {
         
     }
     @IBAction func DuplicateConfirmationButton(_ sender: Any) {
+        self.view.endEditing(true)
         guard let sidField = SidField.text else { return }
         DuplicateIdData(id: sidField)
         if sidField == "" {
@@ -54,6 +58,7 @@ class FirstSignUpViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func ConfirmationButton(_ sender: Any) {
+        self.view.endEditing(true)
         guard let sphoneField = SPhoneField.text else { return }
         if sphoneField == "" {
             alert(title: "휴대전화 번호를 입력하세요")
@@ -67,7 +72,7 @@ class FirstSignUpViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func AuthenticationNumberButton(_ sender: Any) {
-        
+        self.view.endEditing(true)
         guard let spwField = SCertifiedField.text else { return }
         
         if spwField == "" {
