@@ -8,13 +8,14 @@
 import Foundation
 import Alamofire
 
-let baseURL = "http://13.125.0.94:9093"
+let baseURL = "http://13.125.0.94:9094"
 
 enum Api {
     case login(_ id : String, _ password : String)
     case reissue(_ accessToken : String, _ refreshToken : String)
-    case signup(_ id : String, _ name : String, _ password : String)
-    
+    case signup(_ birth : String, _ gender : String, _ id : String, _ loginType : String, _ name : String, _ password : String, _ phone : String)
+    case check(_ checkId : String)
+    case phoneCheck(_ checkPhone : String)
     // Soket
     
     case creatChatroom
@@ -44,6 +45,10 @@ enum Api {
             return "/websocket/chat/{"
         case .removeChatroom(_):
             return "/websocket/chat/remove/{"
+        case .check(_):
+            return "/api/auth/check"
+        case .phoneCheck(_):
+            return "/api/auth/phone"
         }
     }
     func method() -> HTTPMethod {
@@ -64,6 +69,10 @@ enum Api {
             return .get
         case .removeChatroom(_):
             return .get
+        case .check(_):
+            return .post
+        case .phoneCheck(_):
+            return .post
         }
     }
     
