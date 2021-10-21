@@ -35,19 +35,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             guard let user = user else { return }
 
                let emailAddress = user.profile?.email
-
-               let fullName = user.profile?.name
-               let givenName = user.profile?.givenName
-               let familyName = user.profile?.familyName
-
-               let profilePicUrl = user.profile?.imageURL(withDimension: 320)
-            
-            
             print("emailAddress : \(String(describing: emailAddress))")
-            print("fullName : \(String(describing: fullName))")
-            print("givenName : \(String(describing: givenName))")
-            print("familyName : \(String(describing: familyName))")
-            print("profilePicUrl : \(String(describing: profilePicUrl))")
             print("user : \(String(describing: user))\nerror : \(String(describing: error))")
             let vcName = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
             vcName?.modalPresentationStyle = .fullScreen //전체화면으로 보이게 설정
@@ -126,4 +114,3 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
 }
-
