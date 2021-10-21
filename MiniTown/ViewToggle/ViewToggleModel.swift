@@ -25,9 +25,12 @@ var checkCertifiedDone = true
 struct SignUpInfo {
     var id : String?
     var phone : String?
+    var name : String?
+    var loginType : String?
     var birth : String?
     var gender : String?
     var password : String?
+    
 }
 var info = SignUpInfo()
 

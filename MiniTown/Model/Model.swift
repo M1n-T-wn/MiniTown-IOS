@@ -30,6 +30,7 @@ struct LocalSignUpDto : Codable {
     let phone : String
     let name : String
     let password : String
+    let loginType : String
 }
 
 struct Success : Codable {
