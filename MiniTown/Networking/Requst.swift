@@ -94,33 +94,33 @@ func ConfirmationData(phone : String) {
             }
         }
 }
-//func signupdata(id : String, name : String, password : String){
-//    AF.request(baseURL + Api.signup(id, name, password).path() ,
-//               method: Api.signup(id, name, password).method(),
-//               parameters: ["id" : id, "name" : name, "password" : password],
-//               encoder: JSONParameterEncoder.default)
-//        .validate(statusCode: 200..<300)
-//        .responseJSON { response in
-//            
-//            print(response)
-//            switch response.result {
-//            case .success:
-//                print("POST 성공")
-//                let decoder = JSONDecoder()
-//                guard let data = response.data else { return }
-//                do {
-//                    let resault = try decoder.decode(Success.self, from: data)
-//                    if resault.data != "success" {
-//                    }
-//                    print(resault)
-//                    
-//                }
-//                catch {
-//                    print(error)
-//                }
-//            case .failure(let error):
-//                print("Request Error\nCode:\(error._code), Message: \(error.errorDescription!)")
-//            }
-//        }
-//}
-//
+func signupdata(birth : String, gender : String,  id : String, loginType : String, name : String, password : String, phone : String){
+    AF.request(baseURL + Api.signup(birth, gender, id, loginType, name, password, phone).path(),
+               method: Api.signup(birth, gender, id, loginType, name, password, phone).method(),
+               parameters: ["birth": birth, "gender": gender, "id" : id, "loginType": loginType, "name" : name, "password" : password,  "phone": phone],
+               encoder: JSONParameterEncoder.default)
+        .validate(statusCode: 200..<300)
+        .responseJSON { response in
+            
+            print(response)
+            switch response.result {
+            case .success:
+                print("POST 성공")
+                let decoder = JSONDecoder()
+                guard let data = response.data else { return }
+                do {
+                    let resault = try decoder.decode(Success.self, from: data)
+                    if resault.data != "success" {
+                    }
+                    print(resault)
+                    
+                }
+                catch {
+                    print(error)
+                }
+            case .failure(let error):
+                print("Request Error\nCode:\(error._code), Message: \(error.errorDescription!)")
+            }
+        }
+}
+
