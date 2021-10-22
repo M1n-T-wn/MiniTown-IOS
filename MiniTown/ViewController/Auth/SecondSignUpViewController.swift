@@ -8,7 +8,7 @@
 import UIKit
 
 class SecondSignUpViewController: UIViewController, UITextFieldDelegate {
-
+    
     @IBOutlet weak var genderControl: UISegmentedControl!
     @IBOutlet weak var UIbirthDatePicker: UIDatePicker!
     @IBOutlet weak var returnLoginPress: UIButton!
@@ -25,10 +25,12 @@ class SecondSignUpViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        genderControl.selectedSegmentIndex = 0
         nameField.delegate = self
         passwordField.delegate = self
         returnPasswordField.delegate = self
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     @IBAction func birthDatePicker(_ sender: Any) {
@@ -42,15 +44,23 @@ class SecondSignUpViewController: UIViewController, UITextFieldDelegate {
         case 0:
             info.gender = "MEN"
         case 1:
+            info.gender = "MEN"
+        case 2:
             info.gender = "WOMEN"
         default:
+            signUpAlert(title: "성별을 선택하지 않았습니다.")
             break
         }
     }
     @IBAction func returnLoginButton(_ sender: Any) {
+        
         guard let snameField = nameField.text else { return }
         guard let spassField = passwordField.text else { return }
         guard let sreturnpwField = returnPasswordField.text else { return }
+        print(snameField)
+        if info.gender == nil{
+            signUpAlert(title: "성별을 선택하지 않았습니다.")
+        }
         if snameField == "" {
             signUpAlert(title: "이름을 입력하지 않았습니다.")
         }
@@ -63,10 +73,18 @@ class SecondSignUpViewController: UIViewController, UITextFieldDelegate {
             info.name = snameField
             info.loginType = "LOCAL"
             info.password = sreturnpwField
-            print(info.id as Any, info.phone  as Any, info.birth  as Any, info.gender  as Any, info.password  as Any)
+            print(info.id as Any, info.phone  as Any, info.birth  as Any, info.gender  as Any,  info.name  as Any, info.password  as Any)
+            signupdata(birth: info.birth!, gender: info.gender!, id: info.id!, loginType: info.loginType!, name: info.name!, password: info.password!, phone: info.phone!)
         }
     }
-    
+    @objc
+    func keyboardWillShow(_ sender: Notification) {
+        self.view.frame.origin.y = -150
+    }
+    @objc
+    func keyboardWillHide(_ sender: Notification) {
+        self.view.frame.origin.y = 0 // Move view to original position
+    }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         if textField == self.nameField {
@@ -79,6 +97,9 @@ class SecondSignUpViewController: UIViewController, UITextFieldDelegate {
             self.returnLoginButton(self.returnLoginPress!)
         }
         return true
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
     }
     func signUpAlert(title : String) {
         let alert = UIAlertController(title: "\(title)", message: "다시 입력해 주세요.", preferredStyle: UIAlertController.Style.alert)

@@ -57,10 +57,10 @@ func DuplicateIdData(id : String){
                 if let resault = try? decoder.decode(LoginSuccess2.self, from: data) {
                     print(resault)
                     checkId = resault.data
-                    
                 }
                 
             case .failure(let error):
+                signupDone = false
                 print("Request Error\nCode:\(error._code), Message: \(error.errorDescription!)")
             }
         }
@@ -83,7 +83,7 @@ func ConfirmationData(phone : String) {
                     info.checkPhone = resault.data
                 }
                 
-            case .failure(let error):
+            case .failure(let error):                
                 print("Request Error\nCode:\(error._code), Message: \(error.errorDescription!)")
             }
         }

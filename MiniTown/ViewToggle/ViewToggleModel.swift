@@ -14,7 +14,6 @@ var signupDone = true
 
 var checkId : String?
 var checkPhone : String!
-var checkPhoneD : String?
 
 var certifiedPhone : String?
 
@@ -25,6 +24,7 @@ var checkCertifiedDone = true
 struct SignUpInfo {
     var id : String?
     var phone : String?
+    var checkPhone : String?
     var name : String?
     var loginType : String?
     var birth : String?

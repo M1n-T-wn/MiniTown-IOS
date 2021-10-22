@@ -33,15 +33,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) { user, error in
             guard error == nil else { return }
             guard let user = user else { return }
-
-               let emailAddress = user.profile?.email
+            let emailAddress = user.profile?.email
             print("emailAddress : \(String(describing: emailAddress))")
             print("user : \(String(describing: user))\nerror : \(String(describing: error))")
-            let vcName = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
-            vcName?.modalPresentationStyle = .fullScreen //전체화면으로 보이게 설정
-            vcName?.modalTransitionStyle = .crossDissolve //전환 애니메이션 설정
-            self.present(vcName!, animated: true, completion: nil)
-            // If sign in succeeded, display the app's main content View.
+
+            let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondSignUpViewController")
+            self.navigationController?.pushViewController(pushVC!, animated: true)
         }
     }
     @IBAction func loginButton(_ sender: UIButton) {
@@ -59,9 +56,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 print("=-=-=-=-\(LoginDone)=-=-=-=-")
                 if LoginDone != true {
                     let alert = UIAlertController(title: "로그인에 실페했습니다.", message: "다시 확인하고 입력해 주세요.", preferredStyle: UIAlertController.Style.alert)
-                    let defaultAction =  UIAlertAction(title: "확인", style: UIAlertAction.Style.default) { (action) in
-                        return
-                    }
+                    let defaultAction =  UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
                     alert.addAction(defaultAction)
                     self.present(alert, animated: false)
                 } else {
@@ -72,7 +67,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 }
             }
         }
-        
     }
     
     override func viewDidLayoutSubviews() {
@@ -110,6 +104,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if textField == self.passWordTextField{
             self.loginButton(self.LoginPress)
         }
+        
         return true
     }
     
