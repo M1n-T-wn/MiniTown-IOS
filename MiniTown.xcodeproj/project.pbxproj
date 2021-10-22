@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,7 @@
 		5764870627190E160026CE77 /* MiniTownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5764870527190E160026CE77 /* MiniTownUITests.swift */; };
 		5764870827190E160026CE77 /* MiniTownUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5764870727190E160026CE77 /* MiniTownUITestsLaunchTests.swift */; };
 		57711D29272141660069FA3F /* ViewToggleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57711D28272141660069FA3F /* ViewToggleModel.swift */; };
+		577BC2F42722CC4A001C3E1D /* OAuthSignUoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BC2F32722CC4A001C3E1D /* OAuthSignUoViewController.swift */; };
 		5787AC64271F09F80011F137 /* MainReservationLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5787AC63271F09F80011F137 /* MainReservationLocationController.swift */; };
 		5794C4C6271AE85800DE2A00 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794C4C5271AE85800DE2A00 /* Api.swift */; };
 		57CE4AF1272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57CE4AF0272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist */; };
@@ -81,6 +82,7 @@
 		5764870527190E160026CE77 /* MiniTownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTownUITests.swift; sourceTree = "<group>"; };
 		5764870727190E160026CE77 /* MiniTownUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTownUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		57711D28272141660069FA3F /* ViewToggleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewToggleModel.swift; sourceTree = "<group>"; };
+		577BC2F32722CC4A001C3E1D /* OAuthSignUoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSignUoViewController.swift; sourceTree = "<group>"; };
 		5787AC63271F09F80011F137 /* MainReservationLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReservationLocationController.swift; sourceTree = "<group>"; };
 		5794C4C5271AE85800DE2A00 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		57CE4AF0272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist"; path = "../../../../Downloads/client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				576486E827190E140026CE77 /* LoginViewController.swift */,
+				577BC2F32722CC4A001C3E1D /* OAuthSignUoViewController.swift */,
 				57D55F4E271ADAE90046147C /* FirstSignUpViewController.swift */,
 				5761C91B2721205A0088B01C /* SecondSignUpViewController.swift */,
 			);
@@ -388,7 +391,7 @@
 				};
 			};
 			buildConfigurationList = 576486DC27190E140026CE77 /* Build configuration list for PBXProject "MiniTown" */;
-			compatibilityVersion = "Xcode 12.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -561,6 +564,7 @@
 				5761C91C2721205A0088B01C /* SecondSignUpViewController.swift in Sources */,
 				57D55F4F271ADAE90046147C /* FirstSignUpViewController.swift in Sources */,
 				576486E727190E140026CE77 /* SceneDelegate.swift in Sources */,
+				577BC2F42722CC4A001C3E1D /* OAuthSignUoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
