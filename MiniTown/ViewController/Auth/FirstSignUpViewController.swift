@@ -29,16 +29,18 @@ class FirstSignUpViewController: UIViewController, UITextFieldDelegate {
         SidField.delegate = self
         SPhoneField.delegate = self
         SCertifiedField.delegate = self
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         
     }
     @IBAction func DuplicateConfirmationButton(_ sender: Any) {
         self.view.endEditing(true)
         guard let sidField = SidField.text else { return }
-        DuplicateIdData(id: sidField)
         if sidField == "" {
             alert(title: "아이디를 입력해 주세요")
         } else {
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
+            DuplicateIdData(id: sidField)
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.8) {
                 print(checkId as Any)
                 if checkId ==  "Available Id"{
                     let alert = UIAlertController(title: "\(sidField)는 사용 가능한 아이디 입니다.", message: "", preferredStyle: UIAlertController.Style.alert)
@@ -54,7 +56,6 @@ class FirstSignUpViewController: UIViewController, UITextFieldDelegate {
                 }
             }
         }
-
     }
     
     @IBAction func ConfirmationButton(_ sender: Any) {
@@ -78,8 +79,8 @@ class FirstSignUpViewController: UIViewController, UITextFieldDelegate {
         if spwField == "" {
             alert(title: "인증번호를 입력하세요.")
         } else {
-            print("아까 온 인증번호 : \(String(describing: checkPhoneD)), 지금 입력한 인증번호 : \(spwField)")
-            if spwField == checkPhoneD {
+            print("아까 온 인증번호 : \(String(describing: info.checkPhone)), 지금 입력한 인증번호 : \(spwField)")
+            if spwField == info.checkPhone {
                 let alert = UIAlertController(title: "인증번호가 일치합니다.", message: "", preferredStyle: UIAlertController.Style.alert)
                 let defaultAction =  UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
                 alert.addAction(defaultAction)
@@ -114,7 +115,7 @@ class FirstSignUpViewController: UIViewController, UITextFieldDelegate {
         else {
             info.id = sidField
             info.phone = sphoneField
-            print(info.id as Any, info.phone  as Any, info.birth  as Any, info.gender  as Any, info.password  as Any)
+            print(info.checkPhone as Any, info.id as Any, info.phone  as Any, info.birth  as Any, info.gender  as Any, info.password  as Any)
             let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondSignUpViewController")
             self.navigationController?.pushViewController(pushVC!, animated: true)
         }
@@ -128,18 +129,27 @@ class FirstSignUpViewController: UIViewController, UITextFieldDelegate {
         alert.addAction(defaultAction)
         self.present(alert, animated: false)
     }
-    //    override func viewDidLayoutSubviews() {
-    //    }
-    //    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-    //        if textField == self.SidField {
-    //            SnameField.becomeFirstResponder()
-    //        }
-    //        if textField == self.SnameField{
-    //            SrpwField.resignFirstResponder()
-    //        }
-    //        if textField == self.SrpwField{
-    //            self.LoginPageButton(self.LoginpressButton)
-    //        }
-    //        return true
-    //    }
+    @objc
+    func keyboardWillShow(_ sender: Notification) {
+        self.view.frame.origin.y = -150
+        
+    }
+    @objc
+    func keyboardWillHide(_ sender: Notification) {
+        self.view.frame.origin.y = 0
+    }
+        override func viewDidLayoutSubviews() {
+        }
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            if textField == self.SidField {
+                self.DuplicateConfirmationButton(self.DuplicateConfirmationPress!)
+            }
+            if textField == self.SPhoneField{
+                self.AuthenticationNumberButton(self.AuthenticationNumberPress!)
+            }
+            if textField == self.SCertifiedField{
+                self.LoginPageButton(self.LoginpressButton)
+            }
+            return true
+        }
 }
