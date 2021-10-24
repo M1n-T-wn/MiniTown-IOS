@@ -28,6 +28,9 @@
 		576486FC27190E160026CE77 /* MiniTownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576486FB27190E160026CE77 /* MiniTownTests.swift */; };
 		5764870627190E160026CE77 /* MiniTownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5764870527190E160026CE77 /* MiniTownUITests.swift */; };
 		5764870827190E160026CE77 /* MiniTownUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5764870727190E160026CE77 /* MiniTownUITestsLaunchTests.swift */; };
+		5766F1C627259843009FD50B /* SoketApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766F1C527259843009FD50B /* SoketApi.swift */; };
+		5766F1C82725991E009FD50B /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766F1C72725991E009FD50B /* SocketIOManager.swift */; };
+		5766F1CA2725B058009FD50B /* ChatroomListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766F1C92725B058009FD50B /* ChatroomListTableViewCell.swift */; };
 		57711D29272141660069FA3F /* ViewToggleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57711D28272141660069FA3F /* ViewToggleModel.swift */; };
 		577BC2F42722CC4A001C3E1D /* OAuthSignUoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BC2F32722CC4A001C3E1D /* OAuthSignUoViewController.swift */; };
 		57825719272459DF0037468B /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57825718272459DF0037468B /* Settings.storyboard */; };
@@ -86,6 +89,9 @@
 		5764870127190E160026CE77 /* MiniTownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniTownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5764870527190E160026CE77 /* MiniTownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTownUITests.swift; sourceTree = "<group>"; };
 		5764870727190E160026CE77 /* MiniTownUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTownUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5766F1C527259843009FD50B /* SoketApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoketApi.swift; sourceTree = "<group>"; };
+		5766F1C72725991E009FD50B /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		5766F1C92725B058009FD50B /* ChatroomListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomListTableViewCell.swift; sourceTree = "<group>"; };
 		57711D28272141660069FA3F /* ViewToggleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewToggleModel.swift; sourceTree = "<group>"; };
 		577BC2F32722CC4A001C3E1D /* OAuthSignUoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSignUoViewController.swift; sourceTree = "<group>"; };
 		57825718272459DF0037468B /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
@@ -195,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				572D4DB127244A5B003569AD /* MettingTableViewCell.swift */,
+				5766F1C92725B058009FD50B /* ChatroomListTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -308,6 +315,8 @@
 		57D20C8E271EFD8700F8A723 /* Soket */ = {
 			isa = PBXGroup;
 			children = (
+				5766F1C527259843009FD50B /* SoketApi.swift */,
+				5766F1C72725991E009FD50B /* SocketIOManager.swift */,
 			);
 			path = Soket;
 			sourceTree = "<group>";
@@ -588,13 +597,16 @@
 				573E7BC3271B06EA00EEC3A2 /* LoginRequst.swift in Sources */,
 				5782571D27245AF10037468B /* MainSettingViewController.swift in Sources */,
 				572D1534271EBA9900A90D85 /* MeetingHomeViewController.swift in Sources */,
+				5766F1C82725991E009FD50B /* SocketIOManager.swift in Sources */,
 				576486E527190E140026CE77 /* AppDelegate.swift in Sources */,
 				573E7BC0271AF20000EEC3A2 /* Model.swift in Sources */,
 				57711D29272141660069FA3F /* ViewToggleModel.swift in Sources */,
 				5761C91C2721205A0088B01C /* SecondSignUpViewController.swift in Sources */,
 				57D55F4F271ADAE90046147C /* FirstSignUpViewController.swift in Sources */,
+				5766F1CA2725B058009FD50B /* ChatroomListTableViewCell.swift in Sources */,
 				576486E727190E140026CE77 /* SceneDelegate.swift in Sources */,
 				57BA2BCE27243D36001C0859 /* Dume.swift in Sources */,
+				5766F1C627259843009FD50B /* SoketApi.swift in Sources */,
 				572D4DB227244A5B003569AD /* MettingTableViewCell.swift in Sources */,
 				577BC2F42722CC4A001C3E1D /* OAuthSignUoViewController.swift in Sources */,
 			);
