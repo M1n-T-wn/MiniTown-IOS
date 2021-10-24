@@ -16,71 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71L-na-fSp">
-                                <rect key="frame" x="62" y="218" width="291" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
-                                <state key="normal" title="Connect Socket Connection">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1X-Wn-djf">
+                                <rect key="frame" x="100" y="144" width="214" height="618"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="btnPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gEf-a1-SO1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZG-zv-j4G">
-                                <rect key="frame" x="62" y="291" width="291" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
-                                <state key="normal" title="Disconnect Socket Connection">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wrk-90-vXa"/>
-                                    <action selector="disconnectBtnPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9P1-bb-YgB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ypt-SF-vuf">
-                                <rect key="frame" x="86" y="363" width="242" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
-                                <state key="normal" title="Send Message through Socket">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="SiC-sU-9I0"/>
-                                    <action selector="sendMessageBtnPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0Ka-gG-Xb4"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connection is waiting..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwc-1n-uTT">
-                                <rect key="frame" x="20" y="580" width="374" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnG-ha-zxe">
-                                <rect key="frame" x="86" y="435" width="242" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
-                                <state key="normal" title="Auto Diconnect &amp; Reconnect">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="autoBtnPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MS9-TN-gN4"/>
-                                    <action selector="btnPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="OVt-dB-h9F"/>
+                                    <action selector="connect:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vDB-KM-yWs"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="K1X-Wn-djf" secondAttribute="trailing" constant="100" id="013-pF-aHv"/>
+                            <constraint firstItem="K1X-Wn-djf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="5PK-xu-3wV"/>
+                            <constraint firstItem="K1X-Wn-djf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="5yv-FX-0Xk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="K1X-Wn-djf" secondAttribute="bottom" constant="100" id="G21-1B-86J"/>
+                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="autoConnectionButton" destination="XnG-ha-zxe" id="uHF-h6-Rsg"/>
-                        <outlet property="connectionLabel" destination="Mwc-1n-uTT" id="hvn-WE-tZ4"/>
-                        <outlet property="disconnectButton" destination="eZG-zv-j4G" id="Ja4-fb-UYd"/>
-                        <outlet property="sendMessageButton" destination="Ypt-SF-vuf" id="3cs-rp-b4C"/>
-                        <outlet property="socketButton" destination="71L-na-fSp" id="bdn-lQ-tyX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

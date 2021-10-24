@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 class MettingTableViewCell: UITableViewCell {
 
@@ -17,6 +18,10 @@ class MettingTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        MainImage.layer.cornerRadius = 10
+        MainImage.layer.borderWidth = 1
+        MainImage.layer.borderColor = UIColor.clear.cgColor
+        MainImage.clipsToBounds = true
         // Initialization code
     }
 

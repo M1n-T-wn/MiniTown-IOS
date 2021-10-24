@@ -48,6 +48,7 @@ extension MeetingHomeViewController :  UITableViewDelegate, UITableViewDataSourc
         cell.titleTextLable.text = MettingLable.mettingTitleLable[indexPath.row]
         cell.locationLabel.text = MettingLable.mettingLocationLable[indexPath.row]
         cell.infoLabel.text = MettingLable.mettingInfoLable[indexPath.row]
+        cell.MainImage.image = (UIImage(named: MettingLable.mettingImage[indexPath.row])!)
         return cell
     }
 }
