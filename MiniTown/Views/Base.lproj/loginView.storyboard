@@ -156,12 +156,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OmQ-NG-9Cd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1130" y="827"/>
+            <point key="canvasLocation" x="-1213" y="1090"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="MiniTown" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="MiniTown" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -290,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-329.43925233644859" y="96.54427645788337"/>
+            <point key="canvasLocation" x="-411" y="360"/>
         </scene>
         <!--First Sign Up View Controller-->
         <scene sceneID="H5p-JN-do4">
@@ -486,7 +486,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bzp-YF-gAE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-329.43925233644859" y="827.42980561555078"/>
+            <point key="canvasLocation" x="-411" y="1091"/>
         </scene>
         <!--Second Sign Up View Controller-->
         <scene sceneID="JHP-3s-MtM">
@@ -676,12 +676,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlj-hT-xcd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="518.69158878504675" y="826.78185745140399"/>
+            <point key="canvasLocation" x="437" y="1090"/>
         </scene>
         <!--Login Navigation Controller-->
         <scene sceneID="kss-3l-erF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsWhenVerticallyCompact="YES" id="dKn-A1-Kd8" customClass="LoginNavigationController" customModule="MiniTown" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" hidesBarsWhenVerticallyCompact="YES" id="dKn-A1-Kd8" customClass="LoginNavigationController" customModule="MiniTown" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JAM-x8-YFh">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
@@ -697,7 +697,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWb-Sr-JQU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1129" y="97"/>
+            <point key="canvasLocation" x="-1211" y="360"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="9I2-X9-MSm">
@@ -1014,7 +1014,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWC-zl-kQI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1473" y="97"/>
+            <point key="canvasLocation" x="1486" y="360"/>
         </scene>
         <!--MainReservationLocationController-->
         <scene sceneID="R8K-6C-sbL">
@@ -1024,7 +1024,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nbj-aZ-EQM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2254" y="69"/>
+            <point key="canvasLocation" x="2267" y="332"/>
         </scene>
         <!--Storyboard Reference-->
         <scene sceneID="Qx0-vh-ZMQ">
@@ -1034,27 +1034,27 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OL5-hv-Ivg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2196" y="124"/>
+            <point key="canvasLocation" x="2209" y="387"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--MainSettingViewController-->
         <scene sceneID="ITy-V4-8B1">
             <objects>
-                <viewControllerPlaceholder id="KTy-dY-3k0" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="MainSettingViewController" id="KTy-dY-3k0" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="rEG-o6-wxB"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJ3-AI-hv1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2196" y="175"/>
+            <point key="canvasLocation" x="2209" y="438"/>
         </scene>
         <!--FindMettingStart-->
         <scene sceneID="Qk8-qc-cDO">
             <objects>
-                <viewControllerPlaceholder storyboardName="FindMettings" referencedIdentifier="FindMettingStart" id="Wch-Oc-8uf" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="MeetingHomeViewController" storyboardName="FindMettings" referencedIdentifier="FindMettingStart" id="Wch-Oc-8uf" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Tlm-92-3Kc"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZA-ak-MfR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2177" y="17"/>
+            <point key="canvasLocation" x="2190" y="280"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="V8k-L7-A3h">
@@ -1071,7 +1071,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oe9-ri-xiu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="521" y="97"/>
+            <point key="canvasLocation" x="439" y="360"/>
         </scene>
     </scenes>
     <resources>
@@ -1083,7 +1083,7 @@
         <image name="설정" width="312" height="300"/>
         <image name="오른쪽 위 배경" width="240" height="188"/>
         <image name="장소 예약" width="312" height="300"/>
-        <image name="프로필" width="4000" height="4000"/>
+        <image name="프로필" width="600" height="600"/>
         <namedColor name="BlueCust">
             <color red="0.28600001335144043" green="0.57599997520446777" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

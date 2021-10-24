@@ -6,6 +6,8 @@
 //
 
 import UIKit
+
+import Toaster
 import GoogleSignIn
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
@@ -21,10 +23,27 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let backBarButtonItem = UIBarButtonItem(title: "로그인", style: .plain, target: self, action: nil)
         backBarButtonItem.tintColor = UIColor(red: 0.286, green: 0.576, blue: 0.98, alpha: 1)
         self.navigationItem.backBarButtonItem = backBarButtonItem
-        
+        if let uid = UserDefaults.standard.string(forKey: "id") {
+            guard let pwd = UserDefaults.standard.string(forKey: "pwd") else { return }
+            logindata(id: uid, password: pwd)
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                print("=-=-=-=-\(LoginDone)=-=-=-=-")
+                if LoginDone != true {
+                    let alert = UIAlertController(title: "로그인에 실페했습니다.", message: "다시 확인하고 입력해 주세요.", preferredStyle: UIAlertController.Style.alert)
+                    let defaultAction =  UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
+                    alert.addAction(defaultAction)
+                    self.present(alert, animated: false)
+                } else {
+                    let vcName = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
+                    vcName?.modalPresentationStyle = .fullScreen //전체화면으로 보이게 설정
+                    vcName?.modalTransitionStyle = .crossDissolve //전환 애니메이션 설정
+                    Toast(text: "자동으로 로그인 되었습니다.").show()
+                    self.present(vcName!, animated: true, completion: nil)
+                }
+            }
+        }
         idTextField.delegate = self
         passWordTextField.delegate = self
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func signUpButton(_ sender: Any) {
@@ -33,14 +52,26 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) { user, error in
             guard error == nil else { return }
             guard let user = user else { return }
-            let emailAddress = user.profile?.email
-            print("emailAddress : \(String(describing: emailAddress))")
-            print("user : \(String(describing: user))\nerror : \(String(describing: error))")
-
-            let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondSignUpViewController")
-            self.navigationController?.pushViewController(pushVC!, animated: true)
+            if error == nil {
+                let googleemailAddress = user.profile?.email
+                let googlename = user.profile?.name
+                let googleImage = user.profile?.imageURL(withDimension: 175)
+                
+                info.id = googleemailAddress
+                info.name = googlename
+                info.image = googleImage
+                
+                print("emailAddress : \(String(describing: googleemailAddress))")
+                print("user : \(String(describing: googlename))\nerror : \(String(describing: error))")
+                
+                let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondSignUpViewController")
+                self.navigationController?.pushViewController(pushVC!, animated: true)
+            } else {
+                print("---Google Login Error : \(String(describing: error))")
+            }
         }
     }
+    
     @IBAction func loginButton(_ sender: UIButton) {
         guard let id = idTextField.text else { return }
         guard let password = passWordTextField.text  else { return }
@@ -60,6 +91,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     alert.addAction(defaultAction)
                     self.present(alert, animated: false)
                 } else {
+                    print("Auto Login!!")
+                    UserDefaults.standard.set(id, forKey: "id")
+                    UserDefaults.standard.set(password, forKey: "pwd")
                     let vcName = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
                     vcName?.modalPresentationStyle = .fullScreen //전체화면으로 보이게 설정
                     vcName?.modalTransitionStyle = .crossDissolve //전환 애니메이션 설정
@@ -68,7 +102,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             }
         }
     }
-    
     override func viewDidLayoutSubviews() {
         idTextField.borderStyle = .none
         passWordTextField.borderStyle = .none
@@ -104,8 +137,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if textField == self.passWordTextField{
             self.loginButton(self.LoginPress)
         }
-        
         return true
     }
-    
 }
