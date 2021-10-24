@@ -25,6 +25,7 @@ struct SignUpInfo {
     var id : String?
     var phone : String?
     var checkPhone : String?
+    var image : URL?
     var name : String?
     var loginType : String?
     var birth : String?
