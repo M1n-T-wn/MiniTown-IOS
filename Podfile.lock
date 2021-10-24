@@ -13,15 +13,15 @@ PODS:
     - AppAuth/Core (~> 1.4)
     - GTMSessionFetcher/Core (~> 1.5)
   - GTMSessionFetcher/Core (1.7.0)
-  - SocketRocket (0.6.0)
-  - StompClientLib (1.4.1):
-    - SocketRocket
+  - Socket.IO-Client-Swift (15.2.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.1)
   - Toaster (2.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.4)
   - GoogleSignIn
-  - StompClientLib
+  - Socket.IO-Client-Swift (~> 15.2.0)
   - Toaster
 
 SPEC REPOS:
@@ -31,8 +31,8 @@ SPEC REPOS:
     - GoogleSignIn
     - GTMAppAuth
     - GTMSessionFetcher
-    - SocketRocket
-    - StompClientLib
+    - Socket.IO-Client-Swift
+    - Starscream
     - Toaster
 
 SPEC CHECKSUMS:
@@ -41,10 +41,10 @@ SPEC CHECKSUMS:
   GoogleSignIn: fd381840dbe7c1137aa6dc30849a5c3e070c034a
   GTMAppAuth: ad5c2b70b9a8689e1a04033c9369c4915bfcbe89
   GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
-  SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
-  StompClientLib: ac40390e9660c574675f1c933bec81c8e2811a4f
+  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
 
-PODFILE CHECKSUM: a95237f3a467515e6c0d4f9ad5a8398db69022df
+PODFILE CHECKSUM: e461f567a81b2c9368f9d99ee0488d37a6c01e5b
 
 COCOAPODS: 1.10.1
