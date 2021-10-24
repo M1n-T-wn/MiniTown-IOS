@@ -27,12 +27,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             guard let pwd = UserDefaults.standard.string(forKey: "pwd") else { return }
             logindata(id: uid, password: pwd)
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-                print("=-=-=-=-\(LoginDone)=-=-=-=-")
+                print("auto=-=-=-=-\(LoginDone)=-=-=-=-")
                 if LoginDone != true {
                     let alert = UIAlertController(title: "로그인에 실페했습니다.", message: "다시 확인하고 입력해 주세요.", preferredStyle: UIAlertController.Style.alert)
                     let defaultAction =  UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
                     alert.addAction(defaultAction)
                     self.present(alert, animated: false)
+                    LoginDone = true
                 } else {
                     let vcName = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
                     vcName?.modalPresentationStyle = .fullScreen //전체화면으로 보이게 설정
@@ -84,7 +85,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             print("accessToken : \(String(describing: Token.accessToken))\n refreshToken : \(String(describing: Token.refreshToken))")
             logindata(id: id, password: password)
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-                print("=-=-=-=-\(LoginDone)=-=-=-=-")
+                print("main=-=-=-=-\(LoginDone)=-=-=-=-")
                 if LoginDone != true {
                     let alert = UIAlertController(title: "로그인에 실페했습니다.", message: "다시 확인하고 입력해 주세요.", preferredStyle: UIAlertController.Style.alert)
                     let defaultAction =  UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
