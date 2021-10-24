@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-let baseURL = "http://13.125.0.94:9094"
+let baseURL = "http://54.180.98.98:9094"
 
 enum Api {
     case login(_ id : String, _ password : String)

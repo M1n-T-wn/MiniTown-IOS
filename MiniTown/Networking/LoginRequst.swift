@@ -18,7 +18,7 @@ func logindata(id : String, password : String){
                encoder: JSONParameterEncoder.default)
         .validate(statusCode: 200..<300)
         .responseJSON { response in
-            print(response)
+            print("Json : \n\(response)")
             switch response.result {
             case .success:
                 print("POST 성공")
@@ -30,15 +30,17 @@ func logindata(id : String, password : String){
                     Token.accessToken = resault.data?.accessToken
                     Token.refreshToken = resault.data?.refreshToken
                     print(resault as Any)
-                    print("----------")
+                    print("----------111")
                     print("accessToken : \(String(describing: Token.accessToken))\n refreshToken : \(String(describing: Token.refreshToken))")
+                    print("-=-=-=-\(LoginDone) ??")
                 }
                 catch {
                     print(error)
                 }
             case .failure(let error):
-                LoginDone = false
                 print("Request Error\nCode:\(error._code), Message: \(error.errorDescription!)")
+                print("-=-=-=-\(LoginDone) 11?")
+                LoginDone = false
             }
         }
 }
