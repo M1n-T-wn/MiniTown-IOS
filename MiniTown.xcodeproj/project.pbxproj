@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,8 +15,9 @@
 		570DA650271D2D3100DC1908 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570DA64F271D2D3100DC1908 /* HomeViewController.swift */; };
 		570DA653271D8DC600DC1908 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570DA652271D8DC500DC1908 /* UITextField.swift */; };
 		572D1534271EBA9900A90D85 /* MeetingHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D1533271EBA9900A90D85 /* MeetingHomeViewController.swift */; };
+		572D4DB227244A5B003569AD /* MettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D4DB127244A5B003569AD /* MettingTableViewCell.swift */; };
 		573E7BC0271AF20000EEC3A2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E7BBF271AF20000EEC3A2 /* Model.swift */; };
-		573E7BC3271B06EA00EEC3A2 /* Requst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E7BC2271B06EA00EEC3A2 /* Requst.swift */; };
+		573E7BC3271B06EA00EEC3A2 /* LoginRequst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E7BC2271B06EA00EEC3A2 /* LoginRequst.swift */; };
 		5761C91C2721205A0088B01C /* SecondSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5761C91B2721205A0088B01C /* SecondSignUpViewController.swift */; };
 		576486E527190E140026CE77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576486E427190E140026CE77 /* AppDelegate.swift */; };
 		576486E727190E140026CE77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576486E627190E140026CE77 /* SceneDelegate.swift */; };
@@ -29,8 +30,11 @@
 		5764870827190E160026CE77 /* MiniTownUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5764870727190E160026CE77 /* MiniTownUITestsLaunchTests.swift */; };
 		57711D29272141660069FA3F /* ViewToggleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57711D28272141660069FA3F /* ViewToggleModel.swift */; };
 		577BC2F42722CC4A001C3E1D /* OAuthSignUoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BC2F32722CC4A001C3E1D /* OAuthSignUoViewController.swift */; };
+		57825719272459DF0037468B /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57825718272459DF0037468B /* Settings.storyboard */; };
+		5782571D27245AF10037468B /* MainSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782571C27245AF10037468B /* MainSettingViewController.swift */; };
 		5787AC64271F09F80011F137 /* MainReservationLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5787AC63271F09F80011F137 /* MainReservationLocationController.swift */; };
 		5794C4C6271AE85800DE2A00 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794C4C5271AE85800DE2A00 /* Api.swift */; };
+		57BA2BCE27243D36001C0859 /* Dume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BA2BCD27243D36001C0859 /* Dume.swift */; };
 		57CE4AF1272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57CE4AF0272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist */; };
 		57D55F4F271ADAE90046147C /* FirstSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D55F4E271ADAE90046147C /* FirstSignUpViewController.swift */; };
 		57D55F52271ADCE00046147C /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D55F51271ADCE00046147C /* Token.swift */; };
@@ -65,8 +69,9 @@
 		570DA64F271D2D3100DC1908 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		570DA652271D8DC500DC1908 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		572D1533271EBA9900A90D85 /* MeetingHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHomeViewController.swift; sourceTree = "<group>"; };
+		572D4DB127244A5B003569AD /* MettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MettingTableViewCell.swift; sourceTree = "<group>"; };
 		573E7BBF271AF20000EEC3A2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		573E7BC2271B06EA00EEC3A2 /* Requst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requst.swift; sourceTree = "<group>"; };
+		573E7BC2271B06EA00EEC3A2 /* LoginRequst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequst.swift; sourceTree = "<group>"; };
 		5761C91B2721205A0088B01C /* SecondSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSignUpViewController.swift; sourceTree = "<group>"; };
 		576486E127190E140026CE77 /* MiniTown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniTown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		576486E427190E140026CE77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,8 +88,11 @@
 		5764870727190E160026CE77 /* MiniTownUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTownUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		57711D28272141660069FA3F /* ViewToggleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewToggleModel.swift; sourceTree = "<group>"; };
 		577BC2F32722CC4A001C3E1D /* OAuthSignUoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSignUoViewController.swift; sourceTree = "<group>"; };
+		57825718272459DF0037468B /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		5782571C27245AF10037468B /* MainSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingViewController.swift; sourceTree = "<group>"; };
 		5787AC63271F09F80011F137 /* MainReservationLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReservationLocationController.swift; sourceTree = "<group>"; };
 		5794C4C5271AE85800DE2A00 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		57BA2BCD27243D36001C0859 /* Dume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dume.swift; sourceTree = "<group>"; };
 		57CE4AF0272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist"; path = "../../../../Downloads/client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
 		57D55F4E271ADAE90046147C /* FirstSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSignUpViewController.swift; sourceTree = "<group>"; };
 		57D55F51271ADCE00046147C /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
@@ -140,9 +148,10 @@
 			children = (
 				570DA64C271CF77200DC1908 /* Designable */,
 				576486EA27190E140026CE77 /* loginView.storyboard */,
+				57022506271E7B400039B91C /* FindMettings.storyboard */,
+				57825718272459DF0037468B /* Settings.storyboard */,
 				5702250A271E7BC50039B91C /* RentalItems.storyboard */,
 				57022508271E7B940039B91C /* ReservationLocation.storyboard */,
-				57022506271E7B400039B91C /* FindMettings.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,9 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				576486E827190E140026CE77 /* LoginViewController.swift */,
-				577BC2F32722CC4A001C3E1D /* OAuthSignUoViewController.swift */,
 				57D55F4E271ADAE90046147C /* FirstSignUpViewController.swift */,
 				5761C91B2721205A0088B01C /* SecondSignUpViewController.swift */,
+				577BC2F32722CC4A001C3E1D /* OAuthSignUoViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -180,6 +189,14 @@
 				572D1533271EBA9900A90D85 /* MeetingHomeViewController.swift */,
 			);
 			path = FindMeeting;
+			sourceTree = "<group>";
+		};
+		572D4DB027244A3A003569AD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				572D4DB127244A5B003569AD /* MettingTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		576486D827190E140026CE77 = {
@@ -243,10 +260,12 @@
 		5764871427190E3D0026CE77 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5787AC62271F09DB0011F137 /* ReservationLocation */,
 				570DA64F271D2D3100DC1908 /* HomeViewController.swift */,
-				572D1532271EBA4200A90D85 /* FindMeeting */,
 				572D1531271EB9ED00A90D85 /* Auth */,
+				572D1532271EBA4200A90D85 /* FindMeeting */,
+				5787AC62271F09DB0011F137 /* ReservationLocation */,
+				5782571B27245A890037468B /* Settings */,
+				572D4DB027244A3A003569AD /* Cell */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -255,8 +274,17 @@
 			isa = PBXGroup;
 			children = (
 				57711D28272141660069FA3F /* ViewToggleModel.swift */,
+				57BA2BCD27243D36001C0859 /* Dume.swift */,
 			);
 			path = ViewToggle;
+			sourceTree = "<group>";
+		};
+		5782571B27245A890037468B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5782571C27245AF10037468B /* MainSettingViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		5787AC62271F09DB0011F137 /* ReservationLocation */ = {
@@ -272,7 +300,7 @@
 			children = (
 				57D20C8E271EFD8700F8A723 /* Soket */,
 				5794C4C5271AE85800DE2A00 /* Api.swift */,
-				573E7BC2271B06EA00EEC3A2 /* Requst.swift */,
+				573E7BC2271B06EA00EEC3A2 /* LoginRequst.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -391,7 +419,7 @@
 				};
 			};
 			buildConfigurationList = 576486DC27190E140026CE77 /* Build configuration list for PBXProject "MiniTown" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -420,6 +448,7 @@
 				576486EE27190E150026CE77 /* Assets.xcassets in Resources */,
 				57022507271E7B400039B91C /* FindMettings.storyboard in Resources */,
 				57022509271E7B940039B91C /* ReservationLocation.storyboard in Resources */,
+				57825719272459DF0037468B /* Settings.storyboard in Resources */,
 				576486EC27190E140026CE77 /* loginView.storyboard in Resources */,
 				57CE4AF1272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist in Resources */,
 			);
@@ -556,7 +585,8 @@
 				570DA653271D8DC600DC1908 /* UITextField.swift in Sources */,
 				570DA650271D2D3100DC1908 /* HomeViewController.swift in Sources */,
 				57D55F52271ADCE00046147C /* Token.swift in Sources */,
-				573E7BC3271B06EA00EEC3A2 /* Requst.swift in Sources */,
+				573E7BC3271B06EA00EEC3A2 /* LoginRequst.swift in Sources */,
+				5782571D27245AF10037468B /* MainSettingViewController.swift in Sources */,
 				572D1534271EBA9900A90D85 /* MeetingHomeViewController.swift in Sources */,
 				576486E527190E140026CE77 /* AppDelegate.swift in Sources */,
 				573E7BC0271AF20000EEC3A2 /* Model.swift in Sources */,
@@ -564,6 +594,8 @@
 				5761C91C2721205A0088B01C /* SecondSignUpViewController.swift in Sources */,
 				57D55F4F271ADAE90046147C /* FirstSignUpViewController.swift in Sources */,
 				576486E727190E140026CE77 /* SceneDelegate.swift in Sources */,
+				57BA2BCE27243D36001C0859 /* Dume.swift in Sources */,
+				572D4DB227244A5B003569AD /* MettingTableViewCell.swift in Sources */,
 				577BC2F42722CC4A001C3E1D /* OAuthSignUoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

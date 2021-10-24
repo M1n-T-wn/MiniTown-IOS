@@ -16,11 +16,13 @@ PODS:
   - SocketRocket (0.6.0)
   - StompClientLib (1.4.1):
     - SocketRocket
+  - Toaster (2.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.4)
   - GoogleSignIn
   - StompClientLib
+  - Toaster
 
 SPEC REPOS:
   trunk:
@@ -31,6 +33,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - SocketRocket
     - StompClientLib
+    - Toaster
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
@@ -40,7 +43,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   StompClientLib: ac40390e9660c574675f1c933bec81c8e2811a4f
+  Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
 
-PODFILE CHECKSUM: 227d606e8370f9c57c843d215eea6f68dfebfc81
+PODFILE CHECKSUM: a95237f3a467515e6c0d4f9ad5a8398db69022df
 
 COCOAPODS: 1.10.1

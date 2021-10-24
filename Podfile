@@ -9,6 +9,7 @@ target 'MiniTown' do
 pod 'Alamofire', '~> 5.4'
 pod "StompClientLib"
 pod 'GoogleSignIn'
+pod 'Toaster'
 
   target 'MiniTownTests' do
     inherit! :search_paths
