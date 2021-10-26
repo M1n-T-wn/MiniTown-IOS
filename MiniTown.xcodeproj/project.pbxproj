@@ -32,6 +32,7 @@
 		5766F1C82725991E009FD50B /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766F1C72725991E009FD50B /* SocketIOManager.swift */; };
 		5766F1CA2725B058009FD50B /* ChatroomListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766F1C92725B058009FD50B /* ChatroomListTableViewCell.swift */; };
 		57711D29272141660069FA3F /* ViewToggleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57711D28272141660069FA3F /* ViewToggleModel.swift */; };
+		577AC6002726DE31005337BB /* DetailMettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577AC5FF2726DE31005337BB /* DetailMettingViewController.swift */; };
 		577BC2F42722CC4A001C3E1D /* OAuthSignUoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BC2F32722CC4A001C3E1D /* OAuthSignUoViewController.swift */; };
 		57825719272459DF0037468B /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57825718272459DF0037468B /* Settings.storyboard */; };
 		5782571D27245AF10037468B /* MainSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782571C27245AF10037468B /* MainSettingViewController.swift */; };
@@ -93,6 +94,7 @@
 		5766F1C72725991E009FD50B /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
 		5766F1C92725B058009FD50B /* ChatroomListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomListTableViewCell.swift; sourceTree = "<group>"; };
 		57711D28272141660069FA3F /* ViewToggleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewToggleModel.swift; sourceTree = "<group>"; };
+		577AC5FF2726DE31005337BB /* DetailMettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMettingViewController.swift; sourceTree = "<group>"; };
 		577BC2F32722CC4A001C3E1D /* OAuthSignUoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSignUoViewController.swift; sourceTree = "<group>"; };
 		57825718272459DF0037468B /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		5782571C27245AF10037468B /* MainSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				572D1533271EBA9900A90D85 /* MeetingHomeViewController.swift */,
+				577AC5FF2726DE31005337BB /* DetailMettingViewController.swift */,
 			);
 			path = FindMeeting;
 			sourceTree = "<group>";
@@ -602,6 +605,7 @@
 				573E7BC0271AF20000EEC3A2 /* Model.swift in Sources */,
 				57711D29272141660069FA3F /* ViewToggleModel.swift in Sources */,
 				5761C91C2721205A0088B01C /* SecondSignUpViewController.swift in Sources */,
+				577AC6002726DE31005337BB /* DetailMettingViewController.swift in Sources */,
 				57D55F4F271ADAE90046147C /* FirstSignUpViewController.swift in Sources */,
 				5766F1CA2725B058009FD50B /* ChatroomListTableViewCell.swift in Sources */,
 				576486E727190E140026CE77 /* SceneDelegate.swift in Sources */,
