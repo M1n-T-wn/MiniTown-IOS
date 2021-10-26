@@ -121,3 +121,33 @@ func signupdata(birth : String, gender : String,  id : String, loginType : Strin
         }
 }
 
+func TokenReissue() {
+    AF.request(baseURL + Api.reissue(Token.accessToken!, Token.refreshToken!).path(),
+               method: Api.reissue(Token.accessToken!, Token.refreshToken!).method(),
+               parameters: ["accessToken" : Token.accessToken, "refreshToken" : Token.refreshToken],
+               encoder: JSONParameterEncoder.default)
+        .validate(statusCode: 200..<300)
+        .responseJSON { response in
+            print(response)
+            switch response.result {
+            case .success:
+                print("POST 성공")
+                guard let data = response.data else { return }
+                do {
+                    let resault = try decoder.decode(LoginSuccess.self, from: data)
+                    print(resault)
+                    Token.accessToken = resault.data?.accessToken
+                    Token.refreshToken = resault.data?.refreshToken
+                    print(resault as Any)
+                    print("-----reissue-----")
+                    print("accessToken : \(String(describing: Token.accessToken))\n refreshToken : \(String(describing: Token.refreshToken))")
+
+                }
+                catch {
+                    print(error)
+                }
+            case .failure(let error):
+                print("Request Error\nCode:\(error._code), Message: \(error.errorDescription!)")
+            }
+        }
+}
