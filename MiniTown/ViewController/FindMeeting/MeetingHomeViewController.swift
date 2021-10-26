@@ -9,13 +9,15 @@ import UIKit
 
 class MeetingHomeViewController: UIViewController {
     
-
+    
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         setSearchController()
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        setSearchController()
+    }
     @IBAction func backItemButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -35,9 +37,19 @@ class MeetingHomeViewController: UIViewController {
         searchController.searchBar.showsScopeBar = true
         self.navigationItem.searchController = searchController
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) {
+            if let vc = segue.destination as? DetailMettingViewController{
+                vc.mettingTitleLable = MettingLable.mettingTitleLable[indexPath.row]
+                vc.mettingLocationLable = MettingLable.mettingLocationLable[indexPath.row]
+                vc.mettingInfoLable = MettingLable.mettingInfoLable[indexPath.row]
+                vc.mettingImage = MettingLable.mettingImage[indexPath.row]
+                
+            }
+        }
+    }
     
 }
-
 extension MeetingHomeViewController :  UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return MettingLable.mettingTitleLable.count
@@ -51,4 +63,8 @@ extension MeetingHomeViewController :  UITableViewDelegate, UITableViewDataSourc
         cell.MainImage.image = (UIImage(named: MettingLable.mettingImage[indexPath.row])!)
         return cell
     }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        performSegue(withIdentifier: "showDetail", sender: nil)
+//    }
 }
+

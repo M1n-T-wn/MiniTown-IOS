@@ -35,6 +35,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     self.present(alert, animated: false)
                     LoginDone = true
                 } else {
+//                    TokenReissue()
                     let vcName = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
                     vcName?.modalPresentationStyle = .fullScreen //전체화면으로 보이게 설정
                     vcName?.modalTransitionStyle = .crossDissolve //전환 애니메이션 설정
