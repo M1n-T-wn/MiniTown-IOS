@@ -38,10 +38,15 @@
 		5782571D27245AF10037468B /* MainSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782571C27245AF10037468B /* MainSettingViewController.swift */; };
 		5787AC64271F09F80011F137 /* MainReservationLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5787AC63271F09F80011F137 /* MainReservationLocationController.swift */; };
 		5794C4C6271AE85800DE2A00 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794C4C5271AE85800DE2A00 /* Api.swift */; };
+		57B4ACF3272939F100B63F53 /* ChatYourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B4ACF1272939F100B63F53 /* ChatYourTableViewCell.swift */; };
+		57B4ACF4272939F100B63F53 /* ChatYourTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57B4ACF2272939F100B63F53 /* ChatYourTableViewCell.xib */; };
 		57BA2BCE27243D36001C0859 /* Dume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BA2BCD27243D36001C0859 /* Dume.swift */; };
 		57CE4AF1272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57CE4AF0272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist */; };
 		57D55F4F271ADAE90046147C /* FirstSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D55F4E271ADAE90046147C /* FirstSignUpViewController.swift */; };
 		57D55F52271ADCE00046147C /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D55F51271ADCE00046147C /* Token.swift */; };
+		57FAAEAF2729200000219C77 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FAAEAE2729200000219C77 /* Chat.storyboard */; };
+		57FAAEB42729234700219C77 /* ChatMyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FAAEB22729234700219C77 /* ChatMyTableViewCell.swift */; };
+		57FAAEB52729234700219C77 /* ChatMyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57FAAEB32729234700219C77 /* ChatMyTableViewCell.xib */; };
 		5BB33C799B7B423B811688F8 /* Pods_MiniTownTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E72D3F64249727C5E195D16 /* Pods_MiniTownTests.framework */; };
 		A8259739E9DA5D794733D76F /* Pods_MiniTown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6833FDB1CB587743470D5C33 /* Pods_MiniTown.framework */; };
 /* End PBXBuildFile section */
@@ -100,10 +105,15 @@
 		5782571C27245AF10037468B /* MainSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingViewController.swift; sourceTree = "<group>"; };
 		5787AC63271F09F80011F137 /* MainReservationLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReservationLocationController.swift; sourceTree = "<group>"; };
 		5794C4C5271AE85800DE2A00 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		57B4ACF1272939F100B63F53 /* ChatYourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatYourTableViewCell.swift; sourceTree = "<group>"; };
+		57B4ACF2272939F100B63F53 /* ChatYourTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatYourTableViewCell.xib; sourceTree = "<group>"; };
 		57BA2BCD27243D36001C0859 /* Dume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dume.swift; sourceTree = "<group>"; };
 		57CE4AF0272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist"; path = "../../../../Downloads/client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
 		57D55F4E271ADAE90046147C /* FirstSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSignUpViewController.swift; sourceTree = "<group>"; };
 		57D55F51271ADCE00046147C /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		57FAAEAE2729200000219C77 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		57FAAEB22729234700219C77 /* ChatMyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMyTableViewCell.swift; sourceTree = "<group>"; };
+		57FAAEB32729234700219C77 /* ChatMyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatMyTableViewCell.xib; sourceTree = "<group>"; };
 		6833FDB1CB587743470D5C33 /* Pods_MiniTown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniTown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8462B38056EB502E2AC14E1A /* Pods_MiniTown_MiniTownUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniTown_MiniTownUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		929CD78C7354260BF33492A2 /* Pods-MiniTown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniTown.debug.xcconfig"; path = "Target Support Files/Pods-MiniTown/Pods-MiniTown.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,12 +164,14 @@
 		570DA649271CEB1A00DC1908 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				57FAAEB0272922F700219C77 /* Xib */,
 				570DA64C271CF77200DC1908 /* Designable */,
 				576486EA27190E140026CE77 /* loginView.storyboard */,
 				57022506271E7B400039B91C /* FindMettings.storyboard */,
 				57825718272459DF0037468B /* Settings.storyboard */,
 				5702250A271E7BC50039B91C /* RentalItems.storyboard */,
 				57022508271E7B940039B91C /* ReservationLocation.storyboard */,
+				57FAAEAE2729200000219C77 /* Chat.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -272,6 +284,7 @@
 			children = (
 				570DA64F271D2D3100DC1908 /* HomeViewController.swift */,
 				572D1531271EB9ED00A90D85 /* Auth */,
+				57FAAEB12729231200219C77 /* Chat */,
 				572D1532271EBA4200A90D85 /* FindMeeting */,
 				5787AC62271F09DB0011F137 /* ReservationLocation */,
 				5782571B27245A890037468B /* Settings */,
@@ -331,6 +344,24 @@
 				573E7BBF271AF20000EEC3A2 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		57FAAEB0272922F700219C77 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				57FAAEB32729234700219C77 /* ChatMyTableViewCell.xib */,
+				57B4ACF2272939F100B63F53 /* ChatYourTableViewCell.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		57FAAEB12729231200219C77 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				57FAAEB22729234700219C77 /* ChatMyTableViewCell.swift */,
+				57B4ACF1272939F100B63F53 /* ChatYourTableViewCell.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 		7EC864B3513D5421F6695F6A /* Pods */ = {
@@ -455,14 +486,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57FAAEAF2729200000219C77 /* Chat.storyboard in Resources */,
 				576486F127190E150026CE77 /* LaunchScreen.storyboard in Resources */,
 				5702250B271E7BC50039B91C /* RentalItems.storyboard in Resources */,
 				576486EE27190E150026CE77 /* Assets.xcassets in Resources */,
 				57022507271E7B400039B91C /* FindMettings.storyboard in Resources */,
 				57022509271E7B940039B91C /* ReservationLocation.storyboard in Resources */,
+				57B4ACF4272939F100B63F53 /* ChatYourTableViewCell.xib in Resources */,
 				57825719272459DF0037468B /* Settings.storyboard in Resources */,
 				576486EC27190E140026CE77 /* loginView.storyboard in Resources */,
 				57CE4AF1272026560008F0CA /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist in Resources */,
+				57FAAEB52729234700219C77 /* ChatMyTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,12 +629,14 @@
 				576486E927190E140026CE77 /* LoginViewController.swift in Sources */,
 				5794C4C6271AE85800DE2A00 /* Api.swift in Sources */,
 				570DA653271D8DC600DC1908 /* UITextField.swift in Sources */,
+				57FAAEB42729234700219C77 /* ChatMyTableViewCell.swift in Sources */,
 				570DA650271D2D3100DC1908 /* HomeViewController.swift in Sources */,
 				57D55F52271ADCE00046147C /* Token.swift in Sources */,
 				573E7BC3271B06EA00EEC3A2 /* LoginRequst.swift in Sources */,
 				5782571D27245AF10037468B /* MainSettingViewController.swift in Sources */,
 				572D1534271EBA9900A90D85 /* MeetingHomeViewController.swift in Sources */,
 				5766F1C82725991E009FD50B /* SocketIOManager.swift in Sources */,
+				57B4ACF3272939F100B63F53 /* ChatYourTableViewCell.swift in Sources */,
 				576486E527190E140026CE77 /* AppDelegate.swift in Sources */,
 				573E7BC0271AF20000EEC3A2 /* Model.swift in Sources */,
 				57711D29272141660069FA3F /* ViewToggleModel.swift in Sources */,
@@ -792,6 +828,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 84695NVTZ8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MiniTown/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -820,6 +857,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 84695NVTZ8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MiniTown/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
