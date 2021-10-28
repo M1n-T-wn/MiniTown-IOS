@@ -14,6 +14,7 @@
 		570DA64E271CF79F00DC1908 /* corrner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570DA64D271CF79F00DC1908 /* corrner.swift */; };
 		570DA650271D2D3100DC1908 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570DA64F271D2D3100DC1908 /* HomeViewController.swift */; };
 		570DA653271D8DC600DC1908 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570DA652271D8DC500DC1908 /* UITextField.swift */; };
+		572858A827298CF100EF0BAF /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572858A727298CF100EF0BAF /* ChatRoomViewController.swift */; };
 		572D1534271EBA9900A90D85 /* MeetingHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D1533271EBA9900A90D85 /* MeetingHomeViewController.swift */; };
 		572D4DB227244A5B003569AD /* MettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D4DB127244A5B003569AD /* MettingTableViewCell.swift */; };
 		573E7BC0271AF20000EEC3A2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E7BBF271AF20000EEC3A2 /* Model.swift */; };
@@ -77,6 +78,7 @@
 		570DA64D271CF79F00DC1908 /* corrner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = corrner.swift; sourceTree = "<group>"; };
 		570DA64F271D2D3100DC1908 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		570DA652271D8DC500DC1908 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		572858A727298CF100EF0BAF /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		572D1533271EBA9900A90D85 /* MeetingHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHomeViewController.swift; sourceTree = "<group>"; };
 		572D4DB127244A5B003569AD /* MettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MettingTableViewCell.swift; sourceTree = "<group>"; };
 		573E7BBF271AF20000EEC3A2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 			children = (
 				57FAAEB22729234700219C77 /* ChatMyTableViewCell.swift */,
 				57B4ACF1272939F100B63F53 /* ChatYourTableViewCell.swift */,
+				572858A727298CF100EF0BAF /* ChatRoomViewController.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -629,6 +632,7 @@
 				576486E927190E140026CE77 /* LoginViewController.swift in Sources */,
 				5794C4C6271AE85800DE2A00 /* Api.swift in Sources */,
 				570DA653271D8DC600DC1908 /* UITextField.swift in Sources */,
+				572858A827298CF100EF0BAF /* ChatRoomViewController.swift in Sources */,
 				57FAAEB42729234700219C77 /* ChatMyTableViewCell.swift in Sources */,
 				570DA650271D2D3100DC1908 /* HomeViewController.swift in Sources */,
 				57D55F52271ADCE00046147C /* Token.swift in Sources */,
@@ -857,7 +861,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 84695NVTZ8;
+				DEVELOPMENT_TEAM = 368YFJ26SB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MiniTown/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -870,7 +874,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rich.MiniTown;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daehee.MiniTown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
