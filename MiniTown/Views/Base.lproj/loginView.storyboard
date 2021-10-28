@@ -1036,6 +1036,7 @@
                                                     <outlet property="chatMessageLabel" destination="Zbv-Sh-CQM" id="u22-OW-JIk"/>
                                                     <outlet property="titleImage" destination="S5B-SP-Mx2" id="ubT-Dy-wi5"/>
                                                     <outlet property="titleLabel" destination="mEO-MO-D47" id="6jB-lM-sxW"/>
+                                                    <segue destination="03h-sD-6oI" kind="presentation" modalPresentationStyle="fullScreen" id="rm2-bi-voV"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -1077,6 +1078,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWC-zl-kQI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1485.981308411215" y="359.61123110151192"/>
+        </scene>
+        <!--ChatMain-->
+        <scene sceneID="pWl-92-jXl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" referencedIdentifier="ChatMain" id="03h-sD-6oI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ucA-vF-qFK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1487" y="725"/>
         </scene>
         <!--MainReservationLocationController-->
         <scene sceneID="R8K-6C-sbL">

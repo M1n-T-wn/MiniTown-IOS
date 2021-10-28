@@ -39,3 +39,5 @@ struct mettingLable {
 }
 
 let MettingLable = mettingLable()
+
+var chatDatas = [String]()
