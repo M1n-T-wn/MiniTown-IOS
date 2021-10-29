@@ -45,10 +45,8 @@ func logindata(id : String, password : String){
         }
 }
 func DuplicateIdData(id : String){
-    AF.request(baseURL + Api.check(id).path(),
-               method: Api.check(id).method(),
-               parameters: id,
-               encoder: JSONParameterEncoder.default)
+    AF.request(baseURL + Api.check(id).path() + "?id=" + id,
+               method: Api.check(id).method())
         .validate(statusCode: 200..<300)
         .responseJSON { response in
             print(response)
@@ -59,10 +57,26 @@ func DuplicateIdData(id : String){
                 if let resault = try? decoder.decode(LoginSuccess2.self, from: data) {
                     print(resault)
                     checkId = resault.data
+                    info.checkPhone = checkId
                 }
                 
             case .failure(let error):
                 signupDone = false
+                print("Request Error\nCode:\(error._code), Message: \(error.errorDescription!)")
+            }
+        }
+}
+func DuplicatePhoneIdData(phone : String, check : String) {
+    AF.request("http://54.180.98.98:9094/api/auth/phone/" + phone + "?rand=" + check,
+               method: Api.phoneCheck(phone).method())
+        .validate(statusCode: 200..<300)
+        .responseJSON { response in
+            print(response)
+            switch response.result {
+            case .success :
+                print("http://54.180.98.98:9094/api/auth/phone/" + phone + "?rand=" + check)
+            case .failure(let error):
+                checkPhoneDone = false
                 print("Request Error\nCode:\(error._code), Message: \(error.errorDescription!)")
             }
         }
@@ -85,7 +99,7 @@ func ConfirmationData(phone : String) {
                     info.checkPhone = resault.data
                 }
                 
-            case .failure(let error):                
+            case .failure(let error):
                 print("Request Error\nCode:\(error._code), Message: \(error.errorDescription!)")
             }
         }
@@ -93,7 +107,11 @@ func ConfirmationData(phone : String) {
 func signupdata(birth : String, gender : String,  id : String, loginType : String, name : String, password : String, phone : String){
     AF.request(baseURL + Api.signup(birth, gender, id, loginType, name, password, phone).path() + "?rand=" + "\(info.checkPhone!)",
                method: Api.signup(birth, gender, id, loginType, name, password, phone).method(),
-               parameters: ["birth": birth, "gender": gender, "id" : id, "name" : name, "password" : password,  "phone": phone],
+               parameters: ["birth": birth, "gender": gender,
+                            "id" : id, "name" : name,
+                            "password" : password,  "phone": phone,
+                            "address" : info.jibunAddress, "addressCode" : info.zoneCode,
+                            "detailAddress" : info.detailAddress, "keyAddress" : info.keyadress],
                encoder: JSONParameterEncoder.default)
         .validate(statusCode: 200..<300)
         .responseJSON { response in
@@ -141,7 +159,7 @@ func TokenReissue() {
                     print(resault as Any)
                     print("-----reissue-----")
                     print("accessToken : \(String(describing: Token.accessToken))\n refreshToken : \(String(describing: Token.refreshToken))")
-
+                    
                 }
                 catch {
                     print(error)

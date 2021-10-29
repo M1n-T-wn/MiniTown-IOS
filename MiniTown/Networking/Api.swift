@@ -70,7 +70,7 @@ enum Api {
         case .removeChatroom(_):
             return .get
         case .check(_):
-            return .post
+            return .get
         case .phoneCheck(_):
             return .post
         }

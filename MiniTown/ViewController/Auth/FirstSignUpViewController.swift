@@ -74,21 +74,14 @@ class FirstSignUpViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func AuthenticationNumberButton(_ sender: Any) {
         self.view.endEditing(true)
+        guard let sphoneField = SPhoneField.text else { return }
         guard let spwField = SCertifiedField.text else { return }
         
         if spwField == "" {
+            
             alert(title: "인증번호를 입력하세요.")
         } else {
-            print("아까 온 인증번호 : \(String(describing: info.checkPhone)), 지금 입력한 인증번호 : \(spwField)")
-            if spwField == info.checkPhone {
-                let alert = UIAlertController(title: "인증번호가 일치합니다.", message: "", preferredStyle: UIAlertController.Style.alert)
-                let defaultAction =  UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
-                alert.addAction(defaultAction)
-                self.present(alert, animated: false)
-                checkCertifiedDone = true
-            } else {
-                alert(title: "인증번호가 일치하지 않습니다.")
-            }
+            DuplicatePhoneIdData(phone: sphoneField, check: spwField)
         }
     }
     
@@ -112,7 +105,11 @@ class FirstSignUpViewController: UIViewController, UITextFieldDelegate {
         if checkCertifiedDone == false {
             alert(title: "휴대전화 인증이 필요합니다.")
         }
+        if checkPhoneDone == false {
+            alert(title: "인증번호가 일치하지 않습니다.")
+        }
         else {
+            info.checkPhone = spwField
             info.id = sidField
             info.phone = sphoneField
             print(info.checkPhone as Any, info.id as Any, info.phone  as Any, info.birth  as Any, info.gender  as Any, info.password  as Any)

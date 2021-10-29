@@ -10,7 +10,7 @@ import Foundation
 
 var LoginDone = true
 var signupDone = true
-
+ var checkPhoneDone = true
 
 var checkId : String?
 var checkPhone : String!
@@ -31,7 +31,10 @@ struct SignUpInfo {
     var birth : String?
     var gender : String?
     var password : String?
-    
+    var zoneCode: String?
+    var jibunAddress: String?
+    var detailAddress: String?
+    var keyadress : String?
 }
 var info = SignUpInfo()
 

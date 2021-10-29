@@ -17,6 +17,7 @@
 		572858A827298CF100EF0BAF /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572858A727298CF100EF0BAF /* ChatRoomViewController.swift */; };
 		572D1534271EBA9900A90D85 /* MeetingHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D1533271EBA9900A90D85 /* MeetingHomeViewController.swift */; };
 		572D4DB227244A5B003569AD /* MettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D4DB127244A5B003569AD /* MettingTableViewCell.swift */; };
+		573842AC272BE33500A96B34 /* WKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573842AB272BE33500A96B34 /* WKViewController.swift */; };
 		573E7BC0271AF20000EEC3A2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E7BBF271AF20000EEC3A2 /* Model.swift */; };
 		573E7BC3271B06EA00EEC3A2 /* LoginRequst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E7BC2271B06EA00EEC3A2 /* LoginRequst.swift */; };
 		5761C91C2721205A0088B01C /* SecondSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5761C91B2721205A0088B01C /* SecondSignUpViewController.swift */; };
@@ -42,6 +43,7 @@
 		57B4ACF3272939F100B63F53 /* ChatYourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B4ACF1272939F100B63F53 /* ChatYourTableViewCell.swift */; };
 		57B4ACF4272939F100B63F53 /* ChatYourTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57B4ACF2272939F100B63F53 /* ChatYourTableViewCell.xib */; };
 		57BA2BCE27243D36001C0859 /* Dume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BA2BCD27243D36001C0859 /* Dume.swift */; };
+		57C26188272C01F500FC6C5D /* 3rdSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C26187272C01F500FC6C5D /* 3rdSignUpViewController.swift */; };
 		57D55F4F271ADAE90046147C /* FirstSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D55F4E271ADAE90046147C /* FirstSignUpViewController.swift */; };
 		57D55F52271ADCE00046147C /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D55F51271ADCE00046147C /* Token.swift */; };
 		57ECDFB6272AEEC9001B25E1 /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57ECDFB5272AEEC9001B25E1 /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist */; };
@@ -81,6 +83,7 @@
 		572858A727298CF100EF0BAF /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		572D1533271EBA9900A90D85 /* MeetingHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHomeViewController.swift; sourceTree = "<group>"; };
 		572D4DB127244A5B003569AD /* MettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MettingTableViewCell.swift; sourceTree = "<group>"; };
+		573842AB272BE33500A96B34 /* WKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKViewController.swift; sourceTree = "<group>"; };
 		573E7BBF271AF20000EEC3A2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		573E7BC2271B06EA00EEC3A2 /* LoginRequst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequst.swift; sourceTree = "<group>"; };
 		5761C91B2721205A0088B01C /* SecondSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSignUpViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +113,7 @@
 		57B4ACF1272939F100B63F53 /* ChatYourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatYourTableViewCell.swift; sourceTree = "<group>"; };
 		57B4ACF2272939F100B63F53 /* ChatYourTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatYourTableViewCell.xib; sourceTree = "<group>"; };
 		57BA2BCD27243D36001C0859 /* Dume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dume.swift; sourceTree = "<group>"; };
+		57C26187272C01F500FC6C5D /* 3rdSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3rdSignUpViewController.swift; sourceTree = "<group>"; };
 		57D55F4E271ADAE90046147C /* FirstSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSignUpViewController.swift; sourceTree = "<group>"; };
 		57D55F51271ADCE00046147C /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		57ECDFB5272AEEC9001B25E1 /* client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist"; path = "../../../Downloads/client_105041905321-75o2u6k4v3r7d4t3vg6spucsgnvai8qf.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
@@ -198,9 +202,11 @@
 			isa = PBXGroup;
 			children = (
 				576486E827190E140026CE77 /* LoginViewController.swift */,
+				577BC2F32722CC4A001C3E1D /* OAuthSignUoViewController.swift */,
 				57D55F4E271ADAE90046147C /* FirstSignUpViewController.swift */,
 				5761C91B2721205A0088B01C /* SecondSignUpViewController.swift */,
-				577BC2F32722CC4A001C3E1D /* OAuthSignUoViewController.swift */,
+				57C26187272C01F500FC6C5D /* 3rdSignUpViewController.swift */,
+				573842AB272BE33500A96B34 /* WKViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -628,7 +634,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				570DA64E271CF79F00DC1908 /* corrner.swift in Sources */,
+				573842AC272BE33500A96B34 /* WKViewController.swift in Sources */,
 				5787AC64271F09F80011F137 /* MainReservationLocationController.swift in Sources */,
+				57C26188272C01F500FC6C5D /* 3rdSignUpViewController.swift in Sources */,
 				576486E927190E140026CE77 /* LoginViewController.swift in Sources */,
 				5794C4C6271AE85800DE2A00 /* Api.swift in Sources */,
 				570DA653271D8DC600DC1908 /* UITextField.swift in Sources */,

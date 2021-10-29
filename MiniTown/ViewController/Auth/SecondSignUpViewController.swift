@@ -73,8 +73,8 @@ class SecondSignUpViewController: UIViewController, UITextFieldDelegate {
             info.name = snameField
             info.loginType = "LOCAL"
             info.password = sreturnpwField
-            print(info.id as Any, info.phone  as Any, info.birth  as Any, info.gender  as Any,  info.name  as Any, info.password  as Any)
-            signupdata(birth: info.birth!, gender: info.gender!, id: info.id!, loginType: info.loginType!, name: info.name!, password: info.password!, phone: info.phone!)
+            let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "3rdSignUpViewController")
+            self.navigationController?.pushViewController(pushVC!, animated: true)
         }
     }
     @objc
