@@ -78,7 +78,7 @@ extension WKViewController: WKScriptMessageHandler {
             info.keyadress = keyadress
             info.jibunAddress = address
             info.zoneCode = zonecode
-            print(info.keyadress, zonecode, keyadress)
+            print(info.keyadress as Any, zonecode, keyadress)
         }
         info.jibunAddress = address
         info.zoneCode = zonecode
