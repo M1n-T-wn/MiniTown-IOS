@@ -10,6 +10,7 @@ pod 'Alamofire', '~> 5.4'
 pod 'Socket.IO-Client-Swift', '~> 15.2.0'
 pod 'GoogleSignIn'
 pod 'Toaster'
+pod 'SideMenu'
 
   target 'MiniTownTests' do
     inherit! :search_paths
