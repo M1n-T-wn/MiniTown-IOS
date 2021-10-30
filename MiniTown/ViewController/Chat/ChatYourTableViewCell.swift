@@ -11,10 +11,15 @@ import QuartzCore
 class ChatYourTableViewCell: UITableViewCell {
 
     @IBOutlet weak var RadiusView: UIView!
+    
+    @IBOutlet weak var yourProfileImage: UIImageView!
+    @IBOutlet weak var yourProfileNameLabel: UILabel!
+    
     @IBOutlet weak var chatYourTextView: UITextView!
     @IBOutlet weak var chatYourDate: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        yourProfileImage.layer.cornerRadius = yourProfileImage.frame.height/2
         RadiusView.layer.cornerRadius = 10
         // Initialization code
     }

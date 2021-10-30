@@ -9,7 +9,7 @@ import UIKit
 import QuartzCore
 
 class ChatRoomViewController: UIViewController, UITextViewDelegate {
-
+    
     @IBOutlet weak var chatTableView: UITableView!
     @IBOutlet weak var chatStringTextView: UITextView!
     @IBOutlet weak var inputViewButtomMargin: NSLayoutConstraint!
@@ -29,20 +29,28 @@ class ChatRoomViewController: UIViewController, UITextViewDelegate {
         // 키보드 관련 옵져버
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
-
+        
     }
-    
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     override func viewWillAppear(_ animated: Bool) {
         setController()
         chatTableView.separatorStyle = .none
     }
     @IBAction func sendDataButton(_ sender: Any) {
-        chatDatas.append(chatStringTextView.text)
-        chatStringTextView.text = ""
-        let lastindexPath = IndexPath(row: chatDatas.count - 1, section: 0)
-        chatTableView.insertRows(at: [lastindexPath], with: UITableView.RowAnimation.automatic)
-        textViewHeiget.constant = 35
-        chatTableView.scrollToRow(at: lastindexPath, at: UITableView.ScrollPosition.bottom, animated: true)
+        if chatStringTextView.text.isEmpty {
+            return
+        }
+        else {
+            chatDatas.append(chatStringTextView.text)
+            chatStringTextView.text = ""
+            let lastindexPath = IndexPath(row: chatDatas.count - 1, section: 0)
+            chatTableView.insertRows(at: [lastindexPath], with: UITableView.RowAnimation.automatic)
+            textViewHeiget.constant = 35
+            chatTableView.scrollToRow(at: lastindexPath, at: UITableView.ScrollPosition.bottom, animated: true)
+        }
+
     }
     
     @objc func keyboardWillShow(noti: Notification) {
@@ -83,12 +91,12 @@ class ChatRoomViewController: UIViewController, UITextViewDelegate {
         }
     }
     func textViewDidBeginEditing(_ textView: UITextView) {
-           if textView.textColor == UIColor.lightGray {
-               textView.text = nil
-               textView.textColor = UIColor.black
-           }
-           
-       }
+        if textView.textColor == UIColor.lightGray {
+            textView.text = nil
+            textView.textColor = UIColor.black
+        }
+        
+    }
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.isEmpty {
             textView.text = "내용을 입력하세요."
@@ -99,14 +107,16 @@ class ChatRoomViewController: UIViewController, UITextViewDelegate {
         chatStringTextView.text = "내용을 입력하세요."
         chatStringTextView.textColor = UIColor.lightGray
         chatStringTextView.layer.cornerRadius = 5
-
+        
         self.title = "이름입니다."
-        self.navigationController?.navigationBar.tintColor =  UIColor(red: 0.286, green: 0.576, blue: 0.98, alpha: 1)
-        navigationController?.navigationBar.barTintColor = UIColor(red: 0.286, green: 0.576, blue: 0.98, alpha: 1)
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = UIColor(red: 0.286, green: 0.576, blue: 0.98, alpha: 1)
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        let proxy = UINavigationBar.appearance()
+        proxy.tintColor = .white
+        proxy.standardAppearance = appearance
+            proxy.scrollEdgeAppearance = appearance
         self.navigationController?.navigationBar.standardAppearance = appearance;
         self.navigationController?.navigationBar.scrollEdgeAppearance = self.navigationController?.navigationBar.standardAppearance
     }
