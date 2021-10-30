@@ -860,7 +860,7 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="물품 대여"/>
                                                                 <connections>
                                                                     <action selector="rentalItemsButton:" destination="Kkg-yi-pwz" eventType="touchUpInside" id="FLk-wT-ecn"/>
-                                                                    <segue destination="7pn-pP-YnJ" kind="show" id="YVw-8j-SQG"/>
+                                                                    <segue destination="7pn-pP-YnJ" kind="presentation" modalPresentationStyle="fullScreen" id="YVw-8j-SQG"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -892,7 +892,7 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="설정"/>
                                                                 <connections>
                                                                     <action selector="settengsButton:" destination="Kkg-yi-pwz" eventType="touchUpInside" id="gfR-wq-9ML"/>
-                                                                    <segue destination="KTy-dY-3k0" kind="show" id="ZPv-Yn-B3K"/>
+                                                                    <segue destination="KTy-dY-3k0" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="ZPv-Yn-B3K"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -1256,25 +1256,25 @@
             </objects>
             <point key="canvasLocation" x="2267" y="332"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--RentalItemsNavVC1212-->
         <scene sceneID="Qx0-vh-ZMQ">
             <objects>
-                <viewControllerPlaceholder id="7pn-pP-YnJ" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="RentalItems" referencedIdentifier="RentalItemsNavVC1212" id="7pn-pP-YnJ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="HdM-Q2-6pv"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OL5-hv-Ivg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2209" y="387"/>
+            <point key="canvasLocation" x="2184" y="386"/>
         </scene>
-        <!--MainSettingViewController-->
+        <!--SettingViewController-->
         <scene sceneID="ITy-V4-8B1">
             <objects>
-                <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="MainSettingViewController" id="KTy-dY-3k0" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="SettingViewController" id="KTy-dY-3k0" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="rEG-o6-wxB"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJ3-AI-hv1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2209" y="438"/>
+            <point key="canvasLocation" x="2211" y="437"/>
         </scene>
         <!--FindMettingStart-->
         <scene sceneID="Qk8-qc-cDO">
@@ -1315,7 +1315,7 @@
         <image name="오른쪽 위 배경" width="240" height="188"/>
         <image name="장소 예약" width="312" height="300"/>
         <image name="체팅 알림" width="30" height="30"/>
-        <image name="프로필" width="600" height="600"/>
+        <image name="프로필" width="640" height="640"/>
         <namedColor name="BlueCust">
             <color red="0.28600001335144043" green="0.57599997520446777" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

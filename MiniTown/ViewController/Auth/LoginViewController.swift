@@ -19,7 +19,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setController()
         let backBarButtonItem = UIBarButtonItem(title: "로그인", style: .plain, target: self, action: nil)
         backBarButtonItem.tintColor = UIColor(red: 0.286, green: 0.576, blue: 0.98, alpha: 1)
         self.navigationItem.backBarButtonItem = backBarButtonItem
@@ -47,7 +47,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         idTextField.delegate = self
         passWordTextField.delegate = self
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        setController()
+    }
     @IBAction func signUpButton(_ sender: Any) {
     }
     @IBAction func signIn(sender: Any) {
@@ -140,5 +142,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             self.loginButton(self.LoginPress)
         }
         return true
+    }
+    func setController() {
+     
+            self.title = ""
+            self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(red: 0.286, green: 0.576, blue: 0.98, alpha: 1)]
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.accessibilityNavigationStyle = .automatic
+            appearance.backgroundColor = UIColor.white
+            appearance.titleTextAttributes = [.foregroundColor: UIColor(red: 0.286, green: 0.576, blue: 0.98, alpha: 1)]
+            let proxy = UINavigationBar.appearance()
+            proxy.tintColor = UIColor(red: 0.286, green: 0.576, blue: 0.98, alpha: 1)
+            proxy.standardAppearance = appearance
+                proxy.scrollEdgeAppearance = appearance
+            self.navigationController?.navigationBar.standardAppearance = appearance;
+            self.navigationController?.navigationBar.scrollEdgeAppearance = self.navigationController?.navigationBar.scrollEdgeAppearance
     }
 }

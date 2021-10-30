@@ -31,8 +31,8 @@ class ThirdSignUpViewController: UIViewController {
         sss()
     }
     @IBAction func returnHomeButton(_ sender: Any) {
-        guard let zoneCodeField = zoneCodeField.text else { return }
-        guard let jibunAddressField = jibunAddressField.text else { return }
+//        guard let zoneCodeField = zoneCodeField.text else { return }
+//        guard let jibunAddressField = jibunAddressField.text else { return }
         guard let detailAddressField = detailAddressField.text else { return }
 
         info.detailAddress = detailAddressField

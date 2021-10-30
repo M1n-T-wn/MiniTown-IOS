@@ -84,13 +84,13 @@ extension WKViewController: WKScriptMessageHandler {
         info.zoneCode = zonecode
         ThirdSignUpViewController().sss()
         self.dismiss(animated: true, completion: nil)
-//        let previousVC = presentingViewController as? ThirdSignUpViewController
-//        previousVC?.jibunAddressField.text = address
-//        previousVC?.zoneCodeField.text = zonecode
-//        info.jibunAddress = address
-//        info.zoneCode = zonecode
-//        ThirdSignUpViewController().sss()
-        
+        let previousVC = presentingViewController as? ThirdSignUpViewController
+        previousVC?.jibunAddressField.text = address
+        previousVC?.zoneCodeField.text = zonecode
+        info.jibunAddress = address
+        info.zoneCode = zonecode
+        ThirdSignUpViewController().sss()
+
         
         
     }

@@ -65,7 +65,7 @@ class OAuthSignUoViewController: UIViewController, UITextFieldDelegate {
     @IBAction func signUpDoneButton(_ sender: Any) {
         guard let aphoneField = APhoneField.text else { return }
         guard let acertifiedField = ACertifiedField.text else { return }
-
+        
         if aphoneField == "" {
             alert(title: "아이디가 입력되지 않았습니다.")
         }
@@ -103,7 +103,7 @@ class OAuthSignUoViewController: UIViewController, UITextFieldDelegate {
         if textField == self.ACertifiedField {
             self.AConfirmationButton(self.AConfirmationPress!)
         }
-
+        
         return true
     }
 }
