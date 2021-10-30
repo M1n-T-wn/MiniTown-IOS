@@ -18,13 +18,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="h4v-TN-fq2">
-                        <rect key="frame" x="109" y="10" width="191" height="89"/>
+                        <rect key="frame" x="108.5" y="10" width="191.5" height="89"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="755" verticalHuggingPriority="755" scrollEnabled="NO" text="dfdsdsfdsdsdscvdsknvkjfndjlrj;vlmdnfhizxjDFLKM.c dfjiknm" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3KU-5C-Xrk">
-                                <rect key="frame" x="0.0" y="0.0" width="191" height="89"/>
+                                <rect key="frame" x="0.0" y="0.0" width="191.5" height="89"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -36,12 +36,12 @@
                             <constraint firstAttribute="bottom" secondItem="3KU-5C-Xrk" secondAttribute="bottom" id="mtB-3X-aVq"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021.10.30" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgI-GP-Ofk">
-                        <rect key="frame" x="51.5" y="89" width="52.5" height="10"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021.10.30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgI-GP-Ofk">
+                        <rect key="frame" x="51" y="87" width="52.5" height="12"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="52.5" id="oFH-nW-VRC"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <color key="textColor" red="0.5240679869" green="0.5240679869" blue="0.5240679869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>

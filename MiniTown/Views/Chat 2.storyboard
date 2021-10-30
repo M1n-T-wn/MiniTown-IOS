@@ -18,24 +18,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RHs-Ri-Uhn">
-                                <rect key="frame" x="0.0" y="88" width="414" height="731"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="726"/>
                                 <color key="backgroundColor" name="chatBack"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyr-hY-Z8S">
-                                <rect key="frame" x="0.0" y="819" width="414" height="43"/>
+                                <rect key="frame" x="0.0" y="814" width="414" height="48"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="rerer" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="esA-R5-RfC">
-                                        <rect key="frame" x="10" y="4" width="344.5" height="35"/>
+                                        <rect key="frame" x="10" y="4" width="344.5" height="40"/>
                                         <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="pcv-Mi-A5M"/>
+                                            <constraint firstAttribute="height" constant="40" id="pcv-Mi-A5M"/>
                                         </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qf-nt-QwO">
-                                        <rect key="frame" x="358.5" y="4" width="45.5" height="35"/>
+                                        <rect key="frame" x="358.5" y="4" width="45.5" height="40"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="paperplane.fill" catalog="system" title=""/>
                                         <connections>
@@ -67,14 +67,7 @@
                             <constraint firstItem="RHs-Ri-Uhn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ywa-zX-sP4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="5Ab-dl-b2F">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="Hyo-qY-M6n">
-                            <connections>
-                                <action selector="backButton:" destination="Y6W-OH-hqX" id="mdX-8h-QeG"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="list.dash" catalog="system" id="Ffz-9I-DWp"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="5Ab-dl-b2F"/>
                     <connections>
                         <outlet property="chatStringTextView" destination="esA-R5-RfC" id="VE1-XR-iwy"/>
                         <outlet property="chatTableView" destination="RHs-Ri-Uhn" id="8AV-M5-bn2"/>
@@ -106,8 +99,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.left" catalog="system" width="96" height="128"/>
-        <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <namedColor name="chatBack">
             <color red="0.93300002813339233" green="0.96100002527236938" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
