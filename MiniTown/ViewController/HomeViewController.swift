@@ -23,6 +23,7 @@ class HomeViewController: UIViewController {
         chatTableView.delegate = self
         chatTableView.dataSource = self
         super.viewDidLoad()
+        mettingModelParse()
         let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
         self.navigationItem.backBarButtonItem = backBarButtonItem
         homeProfileImage.layer.cornerRadius = homeProfileImage.frame.height/2
