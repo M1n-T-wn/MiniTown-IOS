@@ -38,7 +38,7 @@
 		577A59F7272D0B4000A4AD7F /* MettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A59F6272D0B4000A4AD7F /* MettingModel.swift */; };
 		577A59F9272D115800A4AD7F /* MettingRequst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A59F8272D115800A4AD7F /* MettingRequst.swift */; };
 		577A59FB272D15AF00A4AD7F /* MypageRequst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A59FA272D15AF00A4AD7F /* MypageRequst.swift */; };
-		577A59FD272D15DA00A4AD7F /* MypageModel.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A59FC272D15DA00A4AD7F /* MypageModel.swift.swift */; };
+		577A59FD272D15DA00A4AD7F /* MypageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A59FC272D15DA00A4AD7F /* MypageModel.swift */; };
 		577AC6002726DE31005337BB /* DetailMettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577AC5FF2726DE31005337BB /* DetailMettingViewController.swift */; };
 		577BC2F42722CC4A001C3E1D /* OAuthSignUoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BC2F32722CC4A001C3E1D /* OAuthSignUoViewController.swift */; };
 		57825719272459DF0037468B /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57825718272459DF0037468B /* Settings.storyboard */; };
@@ -116,7 +116,7 @@
 		577A59F6272D0B4000A4AD7F /* MettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MettingModel.swift; sourceTree = "<group>"; };
 		577A59F8272D115800A4AD7F /* MettingRequst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MettingRequst.swift; sourceTree = "<group>"; };
 		577A59FA272D15AF00A4AD7F /* MypageRequst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageRequst.swift; sourceTree = "<group>"; };
-		577A59FC272D15DA00A4AD7F /* MypageModel.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageModel.swift.swift; sourceTree = "<group>"; };
+		577A59FC272D15DA00A4AD7F /* MypageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageModel.swift; sourceTree = "<group>"; };
 		577AC5FF2726DE31005337BB /* DetailMettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMettingViewController.swift; sourceTree = "<group>"; };
 		577BC2F32722CC4A001C3E1D /* OAuthSignUoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSignUoViewController.swift; sourceTree = "<group>"; };
 		57825718272459DF0037468B /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
@@ -381,7 +381,7 @@
 				57D55F51271ADCE00046147C /* Token.swift */,
 				573E7BBF271AF20000EEC3A2 /* LoginModel.swift */,
 				577A59F6272D0B4000A4AD7F /* MettingModel.swift */,
-				577A59FC272D15DA00A4AD7F /* MypageModel.swift.swift */,
+				577A59FC272D15DA00A4AD7F /* MypageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -683,7 +683,7 @@
 				5766F1C82725991E009FD50B /* SocketIOManager.swift in Sources */,
 				57B4ACF3272939F100B63F53 /* ChatYourTableViewCell.swift in Sources */,
 				576486E527190E140026CE77 /* AppDelegate.swift in Sources */,
-				577A59FD272D15DA00A4AD7F /* MypageModel.swift.swift in Sources */,
+				577A59FD272D15DA00A4AD7F /* MypageModel.swift in Sources */,
 				573E7BC0271AF20000EEC3A2 /* LoginModel.swift in Sources */,
 				57711D29272141660069FA3F /* ViewToggleModel.swift in Sources */,
 				577A59FB272D15AF00A4AD7F /* MypageRequst.swift in Sources */,
