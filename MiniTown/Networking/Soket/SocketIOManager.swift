@@ -20,10 +20,15 @@ class SocketIOManager: NSObject {
     
     var socket : SocketIOClient!
     func establishConnection(){
-        print("=================")
+        print("========connect=========")
         socket.connect()
     }
     func closeConnection(){
         socket.disconnect()
     }
+    func joinRoom(chattingRoomId : String, chatCategory : String) {
+        // MEETING, PLACE, GOODS
+        
+    }
+    
 }
