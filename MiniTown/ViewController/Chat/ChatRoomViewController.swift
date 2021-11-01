@@ -16,6 +16,9 @@ class ChatRoomViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var textViewHeiget: NSLayoutConstraint!
     
     override func viewDidLoad() {
+        SocketIOManager.sharedInstance.establishConnection()
+//        SocketIOManager.sharedInstance.sendMessage()
+        
         super.viewDidLoad()
         chatTableView.delegate = self
         chatStringTextView.delegate = self
@@ -30,6 +33,9 @@ class ChatRoomViewController: UIViewController, UITextViewDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        SocketIOManager.sharedInstance.closeConnection()
     }
     @IBAction func backButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -50,7 +56,7 @@ class ChatRoomViewController: UIViewController, UITextViewDelegate {
             textViewHeiget.constant = 35
             chatTableView.scrollToRow(at: lastindexPath, at: UITableView.ScrollPosition.bottom, animated: true)
         }
-
+        
     }
     
     @objc func keyboardWillShow(noti: Notification) {
@@ -116,7 +122,7 @@ class ChatRoomViewController: UIViewController, UITextViewDelegate {
         let proxy = UINavigationBar.appearance()
         proxy.tintColor = .white
         proxy.standardAppearance = appearance
-            proxy.scrollEdgeAppearance = appearance
+        proxy.scrollEdgeAppearance = appearance
         self.navigationController?.navigationBar.standardAppearance = appearance;
         self.navigationController?.navigationBar.scrollEdgeAppearance = self.navigationController?.navigationBar.standardAppearance
     }
