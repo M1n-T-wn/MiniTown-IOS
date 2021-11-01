@@ -744,7 +744,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17, 남, APPLE DEV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lm0-JL-5Hw">
-                                                <rect key="frame" x="125" y="58" width="200" height="34"/>
+                                                <rect key="frame" x="125" y="58" width="258" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="jqa-mr-NEg"/>
                                                 </constraints>
@@ -766,6 +766,7 @@
                                             <constraint firstAttribute="height" constant="100" id="1xW-Ce-tKY"/>
                                             <constraint firstItem="4Tj-yu-Rkr" firstAttribute="top" secondItem="mBI-Ha-5hA" secondAttribute="top" constant="8" id="32e-9f-QeL"/>
                                             <constraint firstAttribute="trailing" secondItem="4Tj-yu-Rkr" secondAttribute="trailing" constant="83" id="5Hu-vG-n7W"/>
+                                            <constraint firstAttribute="trailing" secondItem="lm0-JL-5Hw" secondAttribute="trailing" constant="25" id="FxH-wB-e1i"/>
                                             <constraint firstAttribute="width" constant="408" id="G8r-z3-7Ug"/>
                                             <constraint firstItem="4Tj-yu-Rkr" firstAttribute="leading" secondItem="AnS-b5-dN2" secondAttribute="trailing" constant="25" id="NgW-gW-fcd"/>
                                             <constraint firstAttribute="bottom" secondItem="AnS-b5-dN2" secondAttribute="bottom" constant="8" id="Qqq-xV-dLf"/>
@@ -774,7 +775,6 @@
                                             <constraint firstItem="AnS-b5-dN2" firstAttribute="leading" secondItem="mBI-Ha-5hA" secondAttribute="leading" constant="16" id="fO7-CQ-DpQ"/>
                                             <constraint firstItem="AnS-b5-dN2" firstAttribute="top" secondItem="mBI-Ha-5hA" secondAttribute="top" constant="8" id="hz1-5i-qiU"/>
                                             <constraint firstItem="lm0-JL-5Hw" firstAttribute="leading" secondItem="AnS-b5-dN2" secondAttribute="trailing" constant="25" id="xpX-D9-2cW"/>
-                                            <constraint firstAttribute="trailing" secondItem="lm0-JL-5Hw" secondAttribute="trailing" constant="83" id="y6z-j1-yax"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VcR-YB-X2p">
@@ -1315,7 +1315,7 @@
         <image name="오른쪽 위 배경" width="240" height="188"/>
         <image name="장소 예약" width="312" height="300"/>
         <image name="체팅 알림" width="30" height="30"/>
-        <image name="프로필" width="640" height="640"/>
+        <image name="프로필" width="1000" height="1000"/>
         <namedColor name="BlueCust">
             <color red="0.28600001335144043" green="0.57599997520446777" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

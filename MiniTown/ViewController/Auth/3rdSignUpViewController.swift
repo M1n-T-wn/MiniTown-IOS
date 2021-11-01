@@ -70,6 +70,9 @@ class ThirdSignUpViewController: UIViewController {
         let nextVC = WKViewController()
         present(nextVC, animated: true)
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
+    }
     func sss() {
         jibunAddressField?.text = info.jibunAddress
         zoneCodeField?.text = info.zoneCode
