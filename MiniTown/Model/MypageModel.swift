@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+struct myPage : Codable {
+    let count : Int
+    let data : MainData
+    
+}
+struct MainData : Codable {
+    let name : String
+    let id : String
+    let profile : URL
+    let birth : String
+    let gender : String
+    let info : String?
+    
+}
