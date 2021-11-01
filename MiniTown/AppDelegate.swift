@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
             _ application: UIApplication,
             didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
         ) -> Bool {
+            SocketIOManager.sharedInstance.establishConnection()
             GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
                 if error != nil || user == nil {
                     print("user : \(String(describing: user))")
