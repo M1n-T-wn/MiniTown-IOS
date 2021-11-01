@@ -67,9 +67,9 @@ extension RentalItemsHomeViewController : UITableViewDelegate, UITableViewDataSo
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RemtItemsList", for: indexPath) as! RemtItemsListTableViewCell
         cell.ItemMainImage.image = (UIImage(named: MettingLable.mettingImage[indexPath.row])!)
-        cell.TitleLabel.text = MettingLable.mettingTitleLable[indexPath.row]
+        cell.TitleLabel.text = MettingLable.mettingTitleLable2[indexPath.row]
         cell.DateLabel.text = "2021.10.30 12:04"
-        cell.CostLabel.text = "요청금액 : \(MettingLable.mettingLocationLable[indexPath.row])원"
+        cell.CostLabel.text = "요청금액 : \(MettingLable.mettingLocationLabl2[indexPath.row])원"
         return cell
     }
     
