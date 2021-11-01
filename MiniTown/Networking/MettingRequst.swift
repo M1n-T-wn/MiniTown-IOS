@@ -37,6 +37,4 @@ func mettingModelParse()  {
                 print("Request Error\nCode:\(error._code), Message: \(error.errorDescription!)")
             }
         }
-
-    
 }

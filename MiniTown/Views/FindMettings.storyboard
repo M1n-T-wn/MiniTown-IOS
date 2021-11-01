@@ -61,10 +61,10 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목이 들어가요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMC-iK-NOF">
-                                            <rect key="frame" x="118" y="11" width="190" height="25"/>
+                                            <rect key="frame" x="118" y="11" width="180" height="25"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="25" id="NV7-SW-En2"/>
-                                                <constraint firstAttribute="width" constant="190" id="vk5-xd-Fo3"/>
+                                                <constraint firstAttribute="width" constant="180" id="vk5-xd-Fo3"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="textColor"/>
@@ -83,10 +83,9 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="온라인" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKh-He-U8R">
-                                            <rect key="frame" x="316" y="17" width="69" height="14"/>
+                                            <rect key="frame" x="306" y="17" width="65.5" height="14"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="14" id="X6P-RN-5LX"/>
-                                                <constraint firstAttribute="width" constant="69" id="rbL-DA-DSL"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <color key="textColor" systemColor="secondaryLabelColor"/>
@@ -103,6 +102,7 @@
                                         <constraint firstItem="gMC-iK-NOF" firstAttribute="top" secondItem="IL7-As-h59" secondAttribute="topMargin" id="Z3U-G3-gA7"/>
                                         <constraint firstItem="gMC-iK-NOF" firstAttribute="leading" secondItem="Lpi-KZ-bY9" secondAttribute="trailing" constant="8" symbolic="YES" id="ZIA-Ru-aib"/>
                                         <constraint firstItem="ToT-B6-ckw" firstAttribute="leading" secondItem="Lpi-KZ-bY9" secondAttribute="trailing" constant="8" symbolic="YES" id="dr0-5U-li8"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="BKh-He-U8R" secondAttribute="trailing" constant="5" id="fBU-T4-JJl"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

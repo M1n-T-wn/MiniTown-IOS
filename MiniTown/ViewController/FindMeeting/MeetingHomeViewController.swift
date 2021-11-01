@@ -22,14 +22,14 @@ class MeetingHomeViewController: UIViewController {
         tableView.reloadData()
         let indexPath = NSIndexPath(row: NSNotFound, section: 0)
         self.tableView.scrollToRow(at: indexPath as IndexPath, at: .top, animated: false)
-
+        
         setSearchController()
     }
     override func viewWillAppear(_ animated: Bool) {
         mettingModelParse()
         tableView.reloadData()
         setSearchController()
-
+        
         
     }
     @IBAction func backItemButton(_ sender: Any) {
@@ -79,7 +79,7 @@ extension MeetingHomeViewController :  UITableViewDelegate, UITableViewDataSourc
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         navigationItem.hidesSearchBarWhenScrolling = true
     }
-
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         navigationItem.hidesSearchBarWhenScrolling = true
     }
@@ -93,9 +93,17 @@ extension MeetingHomeViewController :  UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mettingCell", for: indexPath) as! MettingTableViewCell
         cell.titleTextLable.text = chattingRoom[indexPath.row].name
-        cell.locationLabel.text = chattingRoom[indexPath.row].createAt
+        cell.locationLabel.text = chattingRoom[indexPath.row].admin
         cell.infoLabel.text = chattingRoom[indexPath.row].info
-        cell.MainImage.image = (UIImage(named: chattingRoom[indexPath.row].Image ?? "프로필"))
+        if chattingRoom[indexPath.row].Image == nil {
+            let url2 = URL(string: "https://dummyimage.com/500x500/e5e5e5/000000&text=No+Image")!
+            let ImageData = try! Data(contentsOf: url2)
+            cell.MainImage.image = (UIImage(data: ImageData))
+        } else {
+            let url = URL(string: chattingRoom[indexPath.row].Image!)
+            let ImageData = try! Data(contentsOf: url!)
+            cell.MainImage.image = (UIImage(data: ImageData))
+        }
         return cell
     }
     //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -29,9 +29,19 @@ class DetailMettingViewController: UIViewController {
         
         self.navigationController?.navigationBar.titleTextAttributes =
         [.foregroundColor: UIColor.white]
+        
+        if chattingRoom[detailIndex].Image == nil {
+            let url2 = URL(string: "https://dummyimage.com/500x500/e5e5e5/000000&text=No+Image")!
+            let ImageData = try! Data(contentsOf: url2)
+            MainImage.image = (UIImage(data: ImageData))
+        } else {
+            let url = URL(string: chattingRoom[detailIndex].Image!)
+            let ImageData = try! Data(contentsOf: url!)
+            MainImage.image = (UIImage(data: ImageData))
+        }
         nettingNameLabel.text = chattingRoom[detailIndex].name
         mettingPeopleLabel.text = chattingRoom[detailIndex].onOffline
-        MainImage.image = (UIImage(named: chattingRoom[detailIndex].Image ?? "프로필"))
+//        MainImage.image = (UIImage(named: chattingRoom[detailIndex].Image ?? "프로필"))
         mettingInfoLabel.text = chattingRoom[detailIndex].info
         mettingInfoLabel.isEditable = false
         MainImage.layer.shadowColor = UIColor.gray.cgColor

@@ -30,5 +30,5 @@ struct ChattingRoom : Codable {
     let onOffline : String
 
     let chatCount : Int
-    let applicants : [String]
+    let applicants : [String]?
 }
