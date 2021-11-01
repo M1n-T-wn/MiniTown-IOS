@@ -12,16 +12,20 @@ import Foundation
 
 struct mettingLable {
     let mettingTitleLable : [String]
+    let mettingTitleLable2 : [String]
     let mettingLocationLable : [String]
+    let mettingLocationLabl2 : [String]
     var mettingInfoLable : [String] = []
     var mettingChatNessage : [String] = []
     var mettingImage : [String] = []
-    
-    
+//
+//    self.mettingTitleLable =  ["골프 장갑이 필요해요ㅠㅠ", "배구공 2개 빌릴 수 있을까요?", "고기 불판 급구합니다", "조깅화 필요해요", "음악 작업용 노트북 구해요..", "음악 악보 구합니다"]
+//    self.mettingLocationLable = ["20000", "25000", "15000", "50000", "400000", "10000"]
     init() {
         self.mettingTitleLable =  ["개발 한번 해야지", "오늘은 농구", "맛집 탐방 모임", "스케이트 한번 탈깨요", "애플 제품 모임", "스터디 모임"]
+        self.mettingTitleLable2 =  ["골프 장갑이 필요해요ㅠㅠ", "배구공 2개 빌릴 수 있을까요?", "고기 불판 급구합니다", "조깅화 필요해요", "음악 작업용 노트북 구해요..", "음악 악보 구합니다"]
         self.mettingLocationLable = ["동구", "둔산동", "장동", "한발", "서구", "시청로"]
-        
+        self.mettingLocationLabl2 = ["20000", "25000", "15000", "50000", "400000", "10000"]
         self.mettingInfoLable = ["10대부터 20대 분들까지 다양한 분들이 참여하는 개발 동아리 입니다. 저희 활동은 주말에 활동하고 있습니다.",
                                  "중장년 어르신들이 참여하는 농구 동호회 입니다. 저녁에는 회식을 하고 있습니다. 많은 운동을 하고 있어요",
                                  "대전광역시 안에 있는 맜있는 맛집들을 탐방하고 있습니다. 저희는 회비의 일정 비용을 기부하는 착한 동호회 입니다.",
