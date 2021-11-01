@@ -186,6 +186,7 @@
 		570DA649271CEB1A00DC1908 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				570DA651271D8DAD00DC1908 /* extension */,
 				57FAAEB0272922F700219C77 /* Xib */,
 				570DA64C271CF77200DC1908 /* Designable */,
 				576486EA27190E140026CE77 /* loginView.storyboard */,
@@ -272,7 +273,6 @@
 			isa = PBXGroup;
 			children = (
 				57711D27272141440069FA3F /* ViewToggle */,
-				570DA651271D8DAD00DC1908 /* extension */,
 				570DA649271CEB1A00DC1908 /* Views */,
 				5764871427190E3D0026CE77 /* ViewController */,
 				57D55F50271ADCB70046147C /* Model */,
