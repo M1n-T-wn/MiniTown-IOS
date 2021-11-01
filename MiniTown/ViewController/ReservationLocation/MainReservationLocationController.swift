@@ -13,9 +13,11 @@ class MainReservationLocationController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Connection with socket
+        SocketIOManager.sharedInstance.establishConnection()
       
     }
     @IBAction func connect(_ sender: Any) {
-        SocketIOManager.sharedInstance.establishConnection()
+        SocketIOManager.sharedInstance.sendMessage(message1: "제발 한번만")
+        
     }
 }
